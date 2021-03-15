@@ -17,7 +17,7 @@ import './app.css';
 const App = () => (
     <>
     <Switch>
-        <Route exact path='/EstefanoC/'>
+        <Route exact path='/'>
             <Home />
         </Route>
     </Switch>
