@@ -1,0 +1,50 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Body
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+  margin: 0;
+  background-color: var(--comple2);
+  color: var(--comple1);
+  font-family: 'Josefin Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+:root {
+    --pri:#ffd390;
+    --sec: #4081B3;
+    --comple1: #1e1e1e;
+    --comple2: #f6f6f6;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Preset
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.btn-primary {
+  background-color: var(--pri);
+  border-color: var(--pri);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #1474a85f;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.shadown-text {
+  text-shadow: -1px 3px 10px #00000060;
+}
+.t-w {
+  color: var(--comple2);
+}
+.t-b {
+  color: var(--comple1);
+}

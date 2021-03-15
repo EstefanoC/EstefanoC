@@ -1,0 +1,193 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About portrait
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection h1 {
+    font-size: 2.5rem;
+}
+.about .firstSection h1 span {
+    display: block;
+}
+.about .firstSection .portrait > h1 {
+    opacity: 0;
+}
+.about .firstSection .portrait img {
+    box-shadow: 0 0 4px -1px #ffd390c2;
+    max-width: 80%;
+    position: absolute;
+    bottom: 0;
+}
+@media (max-width:992px) {
+    .about .firstSection h1 span {
+        display: inline-block;
+    }
+    .about .firstSection .portrait img {
+        position: static;
+    }
+}
+@media (min-width:1500px) {
+    .about .firstSection .portrait img {
+        max-width: 60%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (min-width:2000px) {
+    .about .firstSection .portrait img {
+        max-width: 40%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media (min-width:3000px) {
+    .about .firstSection .portrait img {
+        max-width: 30%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tab {
+    margin: 0 auto;
+    box-shadow: 24px 25px 42px -46px #00000087;
+}
+.about .firstSection .tab .nav-tabs {
+    border-color: var(--comple1);
+}
+.about .firstSection .tab .nav-tabs .nav-link {
+    color: var(--comple1);
+}
+.about .firstSection .tab .nav-tabs .nav-link:focus, 
+.about .firstSection .tab .nav-tabs .nav-link:hover {
+    color: var(--sec);
+    background: #fff;
+    border-color: var(--comple1) var(--comple1) #fff;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab Bio
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tab .tabBio > p::first-letter {
+    margin-left: 3%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab Con
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tabBio,
+.about .firstSection .tabCo,
+.about .firstSection .tabObj {
+    background: #fff;
+    box-shadow: -15px -15px 32px -30px rgba(0, 0, 0, 0.313) inset;
+    border-left: 1px solid var(--comple1);
+    border-right: 1px solid var(--comple1);
+    border-bottom: 1px solid var(--comple1);
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    padding: .25rem;
+}
+.about .firstSection .tabCo h2,
+.about .firstSection .tabCo h3 {
+    font-size: 1.5rem;
+}
+.about .firstSection .tab .tabCo .icon1 a,
+.about .firstSection .tab .tabCo .icon2 a,
+.about .firstSection .tab .tabCo .icon3 a {
+    text-decoration: none;
+}
+.about .firstSection .tab .tabCo .icon1 .logo,
+.about .firstSection .tab .tabCo .icon2 .logo,
+.about .firstSection .tab .tabCo .icon3 .logo {
+    position: relative;
+}
+.about .firstSection .tab .tabCo .icon1 li strong,
+.about .firstSection .tab .tabCo .icon2 li strong,
+.about .firstSection .tab .tabCo .icon3 li strong {
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+    color: var(--comple1);
+    transform: translate(0, -500%);
+    display: block;
+    transition: ease all 0.5s;
+    font-size: 0.2rem;
+    opacity: 0;
+}
+.about .firstSection .tab .tabCo .icon1 li:hover > a strong,
+.about .firstSection .tab .tabCo .icon2 li:hover > a strong, 
+.about .firstSection .tab .tabCo .icon3 li:hover > a strong {
+    opacity: 1;
+    font-size: 1rem;
+    transform: translate(0, 0);
+}
+@media (max-width:992px) {
+    .about .firstSection .tab {
+        order: 1;
+    }
+    .about .firstSection .tab .tabCo .icon1 li:hover > a strong,
+    .about .firstSection .tab .tabCo .icon2 li:hover > a strong, 
+    .about .firstSection .tab .tabCo .icon3 li:hover > a strong {
+    font-size: 0.8rem;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab icon1
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tab .tabCo .icon1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+.about .firstSection .tab .tabCo .icon1 .logo.React {
+    grid-row: 1 / 3;
+    grid-column: 5 / 4;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab icon2
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tab .tabCo .icon2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              About Tab icon3
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about .firstSection .tab .tabCo .icon3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    list-style: none;
+    align-items: center;
+    justify-items: center;
+}

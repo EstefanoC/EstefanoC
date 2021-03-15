@@ -1,0 +1,160 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav.navbar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1010;
+    background-color: var(--pri);
+    border-bottom: 1px solid var(--comple2);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar Logo
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav.navbar .img-logo {
+    cursor: pointer;
+    margin-left: 1vw;
+    width: 45%;
+    height: auto;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar Menu
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav.navbar .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 75vw;
+    justify-content: start;
+    margin-right: 2rem;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar Links
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav.navbar .nav-links {
+    font-size: 1.5rem;
+    color: var(--comple1);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav.navbar .nav-links.active {
+    padding-bottom: 3rem;
+    background: var(--comple2);
+}
+nav.navbar .nav-links:hover {
+    overflow-y: none;
+    color: var(--sec);
+    background: var(--comple2);
+    text-decoration: none;
+    padding-bottom: 3rem;
+    transition: all 0.2s ease-out;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar Icon
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav.navbar .menu-icon {
+    display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                              Navbar Responsive
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width:959px) {
+    nav.navbar {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 960px) {
+    nav.navbar {
+        overflow: none;
+    }
+    nav.navbar .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        opacity: 1;
+        border-top: 1px solid var(--comple2);
+        transition: all 0.5s ease;
+    }
+    nav.navbar .nav-menu.active {
+        background: var(--pri);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    nav.navbar .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    nav.navbar .nav-links[href='/SobreMi'] {
+        clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
+    }
+    nav.navbar .nav-links[href='/Portafolio'] {
+        padding-top: 5%;
+        margin-top: -5%;
+        clip-path: polygon(0 16%, 100% 0%, 100% 80%, 0% 100%);
+    }
+    nav.navbar .nav-links[href='/Contactame'] {
+        padding-top: 5%;
+        margin-top: -5%;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+    nav.navbar .nav-links:hover {
+        background: var(--comple2);
+        border-radius: 0;
+    }
+    nav.navbar .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+    nav.navbar .menu-icon svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+    nav.navbar .menu-icon svg.move {
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+    nav.navbar .menu-icon svg.move-out {
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+}
