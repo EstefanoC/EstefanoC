@@ -40,13 +40,13 @@ const IndexPortfolio = () => {
                                                 <Row className='h-100 d-flex justify-content-center align-items-center no-gutters'>
                                                     <Col xl={4} className='h-100 text-center'>
                                                         <ListGroup>
-                                                            <ListGroup.Item action href="#link1">
+                                                            <ListGroup.Item action eventKey="#link1">
                                                                 <h2>Descripción</h2>
                                                             </ListGroup.Item>
-                                                            <ListGroup.Item action href="#link2">
+                                                            <ListGroup.Item action eventKey="#link2">
                                                                 <h2>Tecnologías</h2>
                                                             </ListGroup.Item>
-                                                            <ListGroup.Item action href="#link3">
+                                                            <ListGroup.Item action eventKey="#link3">
                                                                 <h2>Objetivos</h2>
                                                             </ListGroup.Item>
                                                         </ListGroup>
