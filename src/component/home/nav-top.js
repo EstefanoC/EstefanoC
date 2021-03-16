@@ -1,16 +1,8 @@
 import React, { useState } from 'react'
-
-// Component
 import BgNavTop from './bg-navtop'
-
-// React Router
 import { useHistory } from 'react-router-dom'
-
-// Animation
 import { motion, useCycle } from 'framer-motion'
 import { HomeVariantTop } from '../helpers/animation'
-
-// Bootstrap
 import { Container, Button } from 'react-bootstrap/'
 
 

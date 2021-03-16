@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
-// Animation
 import { motion } from 'framer-motion'
-
-// Helpers
 import { SvgVariantLogo, PathVariantLogo, SvgVariantText } from '../helpers/animation'
 
 import './index.css'
@@ -19,7 +15,7 @@ const Load = () => {
                 setTimeout(() => {
                     setFadeOut("fade none")
                 }, 500);
-            }, 5000);
+            }, 3000);
         }
     })
 

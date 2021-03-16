@@ -1,19 +1,9 @@
 import React from 'react'
-
-// Bootstrap 
 import { Container } from 'react-bootstrap'
-
-// Frame motion
 import { motion } from 'framer-motion'
-
-// Helpers
 import { pageVariant3, pageTransition } from '../component/helpers/animation'
-
-// component
 import BgNavCenter from '../component/home/bg-navcenter'
 import PortfolioIndex from '../component/portfolio/'
-
-// Css
 import './index.css'
 
 const Portfolio = () => (

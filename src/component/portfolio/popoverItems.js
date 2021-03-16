@@ -1,9 +1,5 @@
 import React from 'react'
-
-// Bootstrap
 import { Popover, OverlayTrigger, Button } from 'react-bootstrap'
-
-// Icon
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 

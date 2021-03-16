@@ -1,17 +1,8 @@
 import React from 'react'
-
-
-// Bootstrap 
 import { Container } from 'react-bootstrap'
-
-// component
 import Form from './form'
-
-// Icon
 import EmailIcon from '@material-ui/icons/Email';
 import MarkunreadMailboxIcon from '@material-ui/icons/MarkunreadMailbox';
-
-// Css
 import './index.css'
 
 const ContactIndex = () => (

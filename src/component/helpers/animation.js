@@ -58,7 +58,7 @@ export const SvgVariantText = {
     show: {
         opacity: 1,
          x: 0,
-         transition: { duration: 3},
+         transition: { duration: 2},
         ease: "easeInout"
     }
 }
@@ -70,7 +70,7 @@ export const PathVariantLogo = {
     show: {
         pathLength: 1,
         transition: {
-            duration: 3,
+            duration: 2,
             ease: "easeInOut"
         }
     }
@@ -88,7 +88,7 @@ export const HomeVariantTop = {
         transition: {
             y: {
                 duration: 0.5,
-                ease: 'easeOut'
+                ease: 'linear'
             }
         }
     }
@@ -106,7 +106,7 @@ export const HomeVariantCenter = {
         transition: {
             y: {
                 duration: 0.5,
-                ease: 'easeOut'
+                ease: 'linear'
             }
         }
     }
@@ -124,7 +124,7 @@ export const HomeVariantBottom = {
         transition: {
             y: {
                 duration: 0.5,
-                ease: 'easeOut'
+                ease: 'linear'
             }
         }
     }

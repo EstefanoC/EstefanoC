@@ -1,19 +1,9 @@
 import React, { useState } from 'react'
-
-// React-Router
 import { useLocation, Link } from 'react-router-dom'
-
-// Component
 import { MenuItems } from '../../data/menuItems'
-
-// Icons
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
-// Img
 import Logo from '../../media/LogoEc.svg' 
-
-// Css
 import './index.css'
 
 

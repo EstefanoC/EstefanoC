@@ -1,15 +1,7 @@
 import React, { useState } from 'react'
-
-// Bootstrap
 import { Form, Alert } from 'react-bootstrap'
-
-// Component
 import ButtonSend from '../helpers/buttonSend'
-
-// FormHooks
 import { useForm } from 'react-hook-form';
-
-// EmailJs
 import emailjs from 'emailjs-com';
 
 

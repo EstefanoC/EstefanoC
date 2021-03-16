@@ -1,6 +1,4 @@
 import React from 'react'
-
-// Icon
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 

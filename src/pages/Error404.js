@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Bootstrap
 import { Container, Row } from 'react-bootstrap/'
 import { Link } from 'react-router-dom';
 

@@ -1,27 +1,13 @@
 import React, { useState} from 'react'
-
-// Bootstrap
 import { Container, Row, Col } from 'react-bootstrap'
-
-// React-Router
 import { useLocation, Link } from 'react-router-dom'
-
-// Scroll
 import {animateScroll as scroll } from 'react-scroll'
-
-// Component
 import { MenuItems } from '../../data/menuItems'
-
-// Icons
 import { IconButton, Tooltip } from '@material-ui/core'
 import Zoom from '@material-ui/core/Zoom';
 import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle';
 import CopyrightIcon from '@material-ui/icons/Copyright';
-
-// Img
 import Logo from '../../media/LogoEc.svg' 
-
-// Css
 import './index.css'
 
 
@@ -65,8 +51,8 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col xs={12} md={4} className='footer-up text-center mt-3 mt-md-0'>
-                        <IconButton onClick={handleClick}>
-                            <Tooltip title='SUBIR' aria-label="add" TransitionComponent={Zoom}  placement="top">
+                        <IconButton onClick={handleClick} aria-label="Subir">
+                            <Tooltip title='SUBIR' aria-label="Subir" TransitionComponent={Zoom}  placement="top">
                                 <ArrowDropDownCircleIcon  style={{ color: '#1e1e1e', fontSize: '5rem'}}/>
                             </Tooltip>
                         </IconButton>

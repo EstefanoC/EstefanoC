@@ -1,19 +1,9 @@
 import React from 'react'
-
-// Bootstrap 
 import { Container } from 'react-bootstrap'
-
-// Frame motion
 import { motion } from 'framer-motion'
-
-// Helpers
 import { pageVariant2, pageTransition } from '../component/helpers/animation'
-
-// component
 import BgNavTop from '../component/home/bg-navtop'
 import Abouts from '../component/about/'
-
-// Css
 import './index.css'
 
 const About = () => (

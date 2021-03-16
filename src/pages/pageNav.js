@@ -1,18 +1,10 @@
 import React from 'react'
-
-// React Router
 import { Switch, Route, useLocation, } from 'react-router-dom';
-
-// Frame motion
 import { AnimatePresence } from 'framer-motion'
-
-// pages
 import About from '../pages/about.js'
 import Portafolio from '../pages/portfolio.js'
 import Contactame from '../pages/contact.js'
 import Error404 from '../pages/Error404.js'
-
-// Component
 import Navbar from '../component/navbar'
 import Footer from '../component/footer'
 

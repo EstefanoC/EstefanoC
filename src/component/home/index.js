@@ -1,14 +1,8 @@
 import React, { useState } from 'react'
-
-// Component
 import NavTop from './nav-top'
 import NavCenter from './nav-center'
 import NavBottom from './nav-bottom'
-
-// Bootstrap
 import { Container, Row, Col } from 'react-bootstrap/'
-
-// Css
 import './index.css'
 
 
@@ -19,6 +13,7 @@ const Home = () => {
     const animateTop = () => {
         setAnimateFinishTop("leaveTop")
     }
+
     const animateCenter = () => {
         setAnimateFinishCenter("leaveCenter")
     }

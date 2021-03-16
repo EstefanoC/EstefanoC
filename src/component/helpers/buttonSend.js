@@ -14,7 +14,6 @@ export default function IconLabelButtons() {
 
   return (
     <div>
-      {/* This Button uses a Font Icon, see the installation instructions in the Icon component docs. */}
       <Button
         variant="contained"
         className={classes.button}

@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-
-// Typed
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 

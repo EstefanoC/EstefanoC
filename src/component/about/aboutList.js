@@ -1,15 +1,12 @@
 import React from 'react'
-
-// Component
 import { Icon1, Icon2, Icon3 } from '../../data/tecnologyItems'
 
 
 let userImage
 
 
-const AboutList = () => {
-    return (
-        <div className="tabCo p-3">
+const AboutList = () => (
+    <div className="tabCo p-3">
 
         <h2 className='mb-5'>Tecnologías y lenguajes que manejo hasta el momento:</h2>
         <ul className="icon1 p-0 mb-5">
@@ -50,7 +47,6 @@ const AboutList = () => {
             }
         </ul>
     </div>
-    )
-}
+)
 
 export default AboutList
