@@ -1,5 +1,4 @@
 import React from 'react'
-import Ripples from 'react-ripples'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Row, Col } from 'react-bootstrap'
@@ -28,14 +27,10 @@ const Carousel = (props) => (
         </Slider>
         <Row className='d-flex justify-content-between no-gutters'>
             <Col xs={6}>
-                <Ripples color='#1e1e1e47' during={500} className='w-100'>
-                    <ButtonBack className='w-100 h-100 back'>Atras</ButtonBack>
-                </Ripples>
+                <ButtonBack className='w-100 h-100 back'>Atras</ButtonBack>
             </Col>
             <Col xs={6}>
-                <Ripples color='#1e1e1e47' during={500} className='w-100'>
-                    <ButtonNext className='w-100 h-100 next'>Siguiente</ButtonNext>
-                </Ripples>
+                <ButtonNext className='w-100 h-100 next'>Siguiente</ButtonNext>
             </Col>
         </Row>
     </CarouselProvider>

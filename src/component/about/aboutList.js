@@ -8,7 +8,7 @@ let userImage
 const AboutList = () => (
     <div className="tabCo p-3">
 
-        <h2 className='mb-5'>Tecnologías y lenguajes que manejo hasta el momento:</h2>
+        <h2 className='mb-3'>Tecnologías y lenguajes que manejo hasta el momento:</h2>
         <ul className="icon1 p-0 mb-5">
             {
                 Icon1.map( (value, index) => {
@@ -21,7 +21,7 @@ const AboutList = () => (
             }
         </ul>
 
-        <h3 className='mb-5'>Librerias o framework que he usado:</h3>
+        <h3 className='mb-3'>Librerias o framework que he usado:</h3>
         <ul className='icon2 p-0 mb-5'>
             {
                 Icon2.map( (value, index) => {
@@ -34,8 +34,8 @@ const AboutList = () => (
             }
         </ul>
 
-        <h3 className='mb-5'>Tambien he usado:</h3>
-        <ul className='icon3 p-0'>
+        <h3 className='mb-3'>Tambien he usado:</h3>
+        <ul className='icon3 p-0 mb-5'>
             {
                 Icon3.map( (value, index) => {
                     userImage = require(`../../media/${value.img.toString()}`).default

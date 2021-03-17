@@ -13,6 +13,7 @@ const About = () => (
         initial="out"
         variants={pageVariant2}
         transition={pageTransition}
+        className="heigh-ajust"
     >
         <header>
             <Container fluid className="headerAbout p-0">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Form, Alert } from 'react-bootstrap'
-import ButtonSend from '../helpers/buttonSend'
+import { Form, Alert, Button } from 'react-bootstrap'
+import SendIcon from '@material-ui/icons/Send';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 
@@ -45,7 +45,8 @@ export default function Formu() {
                 <Form.Control as="textarea" name='Mensaje' rows={3} placeholder="Hola, ¿como te encuentras?.   Me gusta tú trabajo y quisiera contactarme contigo." ref={register({ required: true, minLength:4 })} />
                 {errors.Mensaje && <p>Por favor, coloca mínimo 4 caracteres</p>}
             </Form.Group>
-            <ButtonSend type='submit' />
+            
+                <Button type="submit" className="p-3 m-3" >Enviar <SendIcon style={{ color: 'var(--comple1)', fontSize: '1.3rem'}} /></Button>
         </Form>
         <Alert variant={'success'} show={alert.success}>
             El mensaje me ha llegado con exito!, espera mi respuesta.

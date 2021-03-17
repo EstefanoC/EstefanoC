@@ -21,8 +21,12 @@ footer.footer .footer-menu li a:hover {
     color: var(--sec);
 }
 footer.footer .footer-up svg {
+    transition: ease all 0.5s;
     transform: rotate(180deg);
     cursor: pointer;
+}
+footer.footer .footer-up strong {
+    font-size: 1.3rem;
 }
 footer.footer .footer-up h3 {
     font-size: 1.2rem;
