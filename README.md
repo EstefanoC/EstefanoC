@@ -1,14 +1,77 @@
-<h1>Hola!, Soy un Web Desingned que cada vez ama más lo que hace y sabe que el aprender no tiene limites</h1>
+![](https://i.ibb.co/KjDKJNW/Header-Footer.png)
 
-<p>Puedes ver mis trabajos en mi portafolio <a href="https://estefanoc.github.io/EstefanoC/#/">pulsando aqui</a> o copiando este link: https://estefanoc.github.io/EstefanoC/#/</p>
+<br>
+<br>
+<br>
 
-<h3>Más sobre mi:</h3>
-<ul>
-	<li>Tengo 21 años</li>
-	<li>Mi fuerte es Javascript y React ❤ </li>
-	<li>Soy de Venezuela</li>
-	<li>Me enfoco en el front-end</li>
-	<li>Cada semana tengo planificado aprender algo nuevo</li>
-</ul>
+![](https://i.ibb.co/txgpz0s/Logo-Ec.png)
 
-<strong>Cualquier reto que pueda ayudarme a crecer es bienvenido</strong>
+<br>
+<br>
+<br>
+
+Mi Portafolio               |           Me Portfolio
+=============
+
+<br>
+
+[Portafolio | Portfolio](https://estefanoc.github.io/EstefanoC/#/ "Portfolio Link")
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Contactame               |           Contact Me
+=============
+
+<br>
+<br>
+
+<p>Correo  |  Email : 
+    <br>
+    <strong> estefano.jesus6@gmail.com</strong>
+</p>
+<br>
+<p>Linkedin :</p>
+
+[Perfil In Linkedin](https://www.linkedin.com/in/estefano-chacon/ "Linkedin")
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+Conocimiento                |           Knowledge
+=============
+
+<br>
+<br>
+
+
+Tecnología  \  technology  | Nivel  \  level
+------------- | -------------
+Html  | Alto \ High
+Css  | Alto \ High 
+Bootstrap  | Alto \ High
+Jquery  | Alto \ High 
+Git  | Alto \ High 
+Json  | Alto \ High 
+Javascript  | Alto \ High
+React  | Medio alto \ medium high 
+Firebase  | Medio alto \ medium high
+Php  | Medio \ medium 
+MySql  | Medio \ medium
+Wordpress  | Medio \ medium
+
+<br>
+<br>
+
+
+![](https://i.ibb.co/KjDKJNW/Header-Footer.png)
