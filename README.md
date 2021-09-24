@@ -64,11 +64,13 @@ Jquery  | Alto \ High
 Git  | Alto \ High 
 Json  | Alto \ High 
 Javascript  | Alto \ High
-React  | Medio alto \ medium high 
-Firebase  | Medio alto \ medium high
-Php  | Medio \ medium 
-MySql  | Medio \ medium
-Wordpress  | Medio \ medium
+React  | Alto \ High 
+Next.js  | Medio alto \ Medium high 
+Firebase  | Medio alto \ Medium high
+Php  | Medio \ Medium 
+MySql  | Medio \ Medium
+Wordpress  | Medio \ Medium
+Node.js  | Medio \ Medium 
 
 <br>
 <br>
