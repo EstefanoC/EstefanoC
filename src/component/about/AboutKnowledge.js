@@ -10,7 +10,7 @@ const AboutKnowledge = () => {
       {t("about.certificate.data", { returnObjects: true }).map((value) => (
         <li key={value.id} className="liCer" title={value.name}>
           <a
-            href={`../../media${value.url}`}
+            href={process.env.PUBLIC_URL + `/pdf${value.url}`}
             target="_blank"
             rel="noreferrer"
             download={`${value.name} Estefano Chacon ${t(

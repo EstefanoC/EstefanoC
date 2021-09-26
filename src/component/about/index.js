@@ -17,16 +17,22 @@ const IndexAbout = () => {
         <Container fluid>
           <Row noGutters>
             <Col md={6} className="tab align-items-center">
-              <Tabs defaultActiveKey='autobiography' id="tab" className="pt-3">
-                <Tab eventKey='autobiography' title={t('about.autobiography.title')}>
+              <Tabs defaultActiveKey="autobiography" id="tab" className="pt-3">
+                <Tab
+                  eventKey="autobiography"
+                  title={t("about.autobiography.title")}
+                >
                   <div className="tabBio p-3">
                     <p>
-                      {t('about.autobiography.name')}&nbsp;
-                      <strong>{t('about.autobiography.strong')}</strong>&nbsp;
-                      {t('about.autobiography.p')}
+                      {t("about.autobiography.name")}&nbsp;
+                      <strong>{t("about.autobiography.strong")}</strong>&nbsp;
+                      {t("about.autobiography.p")}
                     </p>
                     <a
-                      href={`../../media/${t('about.autobiography.cv-pdf')}`}
+                      href={
+                        process.env.PUBLIC_URL +
+                        `/pdf/${t("about.autobiography.cv-pdf")}`
+                      }
                       target="_blank"
                       rel="noreferrer"
                       download="Cv Front-End Estefano Chacon"
@@ -35,7 +41,7 @@ const IndexAbout = () => {
                         type="download"
                         className="p-3 m-3 button-download"
                       >
-                        {t('about.button-download')}&nbsp;
+                        {t("about.button-download")}&nbsp;
                         <CloudDownloadIcon
                           style={{
                             color: "var(--comple1)",
@@ -46,10 +52,13 @@ const IndexAbout = () => {
                     </a>
                   </div>
                 </Tab>
-                <Tab eventKey="Knowledge" title={t('about.knowledge.title')}>
+                <Tab eventKey="Knowledge" title={t("about.knowledge.title")}>
                   <AboutList />
                 </Tab>
-                <Tab eventKey="Certificados" title={t('about.certificate.titles')}>
+                <Tab
+                  eventKey="Certificados"
+                  title={t("about.certificate.titles")}
+                >
                   <AboutKnowledge />
                 </Tab>
               </Tabs>
