@@ -1,0 +1,350 @@
+{
+  "home": {
+    "button-about": "About me",
+    "bg-about": {
+      "hello": "Hello World!",
+      "typed": [
+        "Thanks for visit me :)",
+        "Learn every day more about web development is my passion",
+        "Meet me here",
+        "I want to continue growing professionally",
+        "I like the challenges!",
+        "I don't drink coffee to stay awake, i have too energy",
+        "I am responsible",
+        "I am focused"
+      ]
+    },
+    "button-portfolio": "Portfolio",
+    "bg-portfolio": {
+      "invited": "invited",
+      "typed": [
+        "https://es.reactjs.org/",
+        "https://github.com/",
+        "https://firebase.google.com/",
+        "https://estefanoc.github.io/UrbanStyle/",
+        "https://developers.google.com/speed/pagespeed/",
+        "Enter my portfolio and see what I am capable of",
+        "I will do my best to make your website look its best"
+      ]
+    },
+    "button-contact": "Contact me",
+    "bg-contact": {
+      "typed": ["+58 0412", "+58 041414", "+57 031247", "0212", "+58 021265"]
+    }
+  },
+  "navbar": {
+    "nav-menu-li": [
+      {
+        "title": "About me",
+        "url": "/AboutMe",
+        "cName": "nav-links"
+      },
+      {
+        "title": "Portfolio",
+        "url": "/Portfolio",
+        "cName": "nav-links"
+      },
+      {
+        "title": "Contact me",
+        "url": "/ContactMe",
+        "cName": "nav-links"
+      }
+    ],
+    "language-map": [
+      {
+        "code": "en",
+        "title": "English"
+      },
+      {
+        "code": "es",
+        "title": "Spanish"
+      }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "autobiography": {
+      "title": "Autobiography",
+      "name": "My name is Estefano Chacón, I am",
+      "strong": "web developer front-end junior",
+      "p": "and I am 21 years old, for a couple of years I have fallen in love with programming and especially web development.",
+      "cv-pdf": "cv_en.pdf"
+    },
+    "knowledge": {
+      "title": "Knowledge",
+      "p1": "Technologies and languages that I use so far:",
+      "p2": "Libraries or framework that I have used:",
+      "p3": "I have also used:"
+    },
+    "certificate": {
+      "title": "Certificate",
+      "titles": "Certificates",
+      "data": [
+        {
+          "id": 1,
+          "name": "Html Css",
+          "url": "/html-css.pdf"
+        },
+        {
+          "id": 2,
+          "name": "Git Github",
+          "url": "/git-github.pdf"
+        },
+        {
+          "id": 3,
+          "name": "Professional javascript",
+          "url": "/javascript-profesional.pdf"
+        },
+        {
+          "id": 4,
+          "name": "Wordpress fundamentals",
+          "url": "/fundamentos-wordpress.pdf"
+        },
+        {
+          "id": 5,
+          "name": "Professional wordpress",
+          "url": "/wordpress-profesional.pdf"
+        },
+        {
+          "id": 6,
+          "name": "React",
+          "url": "/react.pdf"
+        },
+        {
+          "id": 7,
+          "name": "React Hooks",
+          "url": "/react-hooks.pdf"
+        },
+        {
+          "id": 8,
+          "name": "React Advanced",
+          "url": "/react-avanzado.pdf"
+        },
+        {
+          "id": 9,
+          "name": "Firebase",
+          "url": "/firebase-web.pdf"
+        },
+        {
+          "id": 10,
+          "name": "Database",
+          "url": "/bd.pdf"
+        },
+        {
+          "id": 11,
+          "name": "Sql",
+          "url": "/practico-sql.pdf"
+        },
+        {
+          "id": 12,
+          "name": "Next",
+          "url": "/next.pdf"
+        },
+        {
+          "id": 13,
+          "name": "Node fundamentals",
+          "url": "/fundamentos-node.pdf"
+        },
+        {
+          "id": 14,
+          "name": "Backend Nodejs",
+          "url": "/backend-nodejs.pdf"
+        }
+      ]
+    },
+    "button-download": "Download Cv"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "git-title": "Github of the {{title}} project",
+    "tab-description": "Description",
+    "tab-technology": "Technology",
+    "tab-technology-p": "The technologies used in this project were:",
+    "tab-objectives": "Objectives",
+    "button-project": "Check out the project here!",
+    "carrousel-next": "Next",
+    "carrousel-back": "Back",
+    "data": [
+      {
+        "title": "Urban Style",
+        "url": {
+          "git": "https://github.com/EstefanoC/UrbanStyle",
+          "web": "https://estefanoc.github.io/UrbanStyle/"
+        },
+        "img": {
+          "quantity": 7,
+          "url": [
+            "Us1.jpg",
+            "Us2.jpg",
+            "Us3.jpg",
+            "Us4.jpg",
+            "Us5.jpg",
+            "Us6.jpg",
+            "Us7.jpg"
+          ]
+        },
+        "description": "In this project I proposed to make a page from scratch that has functionality and works with a database in a fluid way, maintaining the theme of urban clothing, having as a general basis the technology of React and taking advantage of all the tools that it offers, such as its dependencies and integration with the DOM.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Bootstrap",
+          "Font Awesome",
+          "Javascript",
+          "React",
+          "Firebase"
+        ],
+        "objectives": [
+          "Get an interactive experience",
+          "Learn more about how React and Firebase work",
+          "Make a search engine with real-time filtering",
+          "Import several images at the same time with the help of a loop without having to do it manually"
+        ]
+      },
+      {
+        "title": "Game Room",
+        "url": {
+          "git": "https://github.com/EstefanoC/GameRoom",
+          "web": "https://game-room-chi.vercel.app/"
+        },
+        "img": {
+          "quantity": 6,
+          "url": [
+            "Gr1.JPG",
+            "Gr2.JPG",
+            "Gr3.JPG",
+            "Gr4.JPG",
+            "Gr5.JPG",
+            "Gr6.JPG"
+          ]
+        },
+        "description": "A one-page application where you will find a collection of 4 games, with their change of difficulty, time management and scores in general. A total challenge in terms of the logic involved in making interactive games only with Javascript, since you have to create CPU",
+        "tecnology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
+        "objectives": [
+          "Handling the states in the single page application",
+          "Creating an AI to make competitive games",
+          "Understanding of Next.js and all its tools",
+          "Interactive and attractive UI and UX"
+        ]
+      },
+      {
+        "title": "Breaking Bad",
+        "url": {
+          "git": "https://github.com/EstefanoC/Breaking-Bad",
+          "web": "https://estefanoc.github.io/Breaking-Bad/"
+        },
+        "img": {
+          "quantity": 5,
+          "url": ["Bb1.JPG", "Bb2.JPG", "Bb3.JPG", "Bb4.JPG", "Bb5.JPG"]
+        },
+        "description": "A simple project designed to capture what has been learned about API calls, callbacks and handling of requests and information in an asynchronous way, with an integration at the same time of a filter of all the information returned accompanied by a subtle style that matches to the initial theme.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Sass",
+          "Javascript",
+          "Typescript",
+          "Webpack"
+        ],
+        "objectives": [
+          "Correct control of API information",
+          "Fully understand asynchronous functions in javascript",
+          "A Lazyload of all the information based on the scroll",
+          "Make a filter that handles several options without any collision"
+        ]
+      },
+      {
+        "title": "Caroline Spa",
+        "url": {
+          "git": "https://github.com/EstefanoC/Caroline-Spa",
+          "web": "https://caroline-spa.herokuapp.com/index.php"
+        },
+        "img": {
+          "quantity": 8,
+          "url": [
+            "Cs1.jpg",
+            "Cs2.jpg",
+            "Cs3.jpg",
+            "Cs4.jpg",
+            "Cs5.jpg",
+            "Cs6.jpg",
+            "Cs7.jpg",
+            "Cs8.jpg"
+          ]
+        },
+        "description": "CarolineSpa is a project intended for a general learning of how Apache, Php and MySQL databases work. Resulting in a page with the possibility of a theme that can be exported to Wordpress, thus being a functional page.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Bootstrap",
+          "Font Awesome",
+          "Javascript",
+          "WampServer",
+          "Php"
+        ],
+        "objectives": [
+          "Learn how Php works",
+          "Understand Apache integration",
+          "Know how the integration of MySQL in a web page works"
+        ]
+      },
+      {
+        "title": "Arquitectura Bosque",
+        "url": {
+          "git": "https://github.com/EstefanoC/architecture",
+          "web": "https://estefanoc.github.io/architecture/"
+        },
+        "img": {
+          "quantity": 3,
+          "url": ["Ab1.jpg", "Ab2.jpg", "Ab3.jpg"]
+        },
+        "description": "Rural architecture is the basis of this static page design made with the aim of continuing to master the tools that bootstrap offers.",
+        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "objectives": ["Fully master Bootstrap 5", "Make a minimalist design"]
+      },
+      {
+        "title": "RealState GDl",
+        "url": {
+          "git": "https://github.com/EstefanoC/Bienes-Raices-GDL",
+          "web": "https://estefanoc.github.io/Bienes-Raices-GDL/"
+        },
+        "img": {
+          "quantity": 4,
+          "url": ["Rgdl1.jpg", "Rgdl2.jpg", "Rgdl3.jpg", "Rgdl4.jpg"]
+        },
+        "description": "Design created only with Html and Css, maintaining the best possible use of semantics and at the same time wanting to convey luxury in the general design of the web page.",
+        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "objectives": [
+          "Fully master Bootstrap 5",
+          "Get the best possible semantics offered by Html 5"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact me",
+    "h1": "Send me an email by filling out this simple form",
+    "p1": "Or open your default mail manager by pressing the icon",
+    "email-href": "mailto:estefano.jesus6@gmail.com?Subject=I%20would%20like%20contact%20you",
+    "email-title": "Open your mail manager",
+    "form-name-label": "Please enter your name",
+    "form-name-placeholder": "Name",
+    "form-name-error": "Please enter your name (Minimum 3 characters)",
+    "form-email-label": "Enter your email",
+    "form-email-placeholder": "Example: email@email.com",
+    "form-email-error": "Please verify that your email is correct",
+    "form-message-label": "Enter your message",
+    "form-message-placeholder": "Hello, how are you?. I like your work and I would like to contact you.",
+    "form-message-error": "Please enter at least 4 characters",
+    "form-button": "Send",
+    "form-success": "The message has reached me successfully! Wait for my answer",
+    "form-error": "An error has occurred, please try again"
+  },
+  "error404": {
+    "title": "Page not found",
+    "h2": "Go back to home"
+  },
+  "footer": {
+    "go-up": "Back to top",
+    "copyright": "All rights reserved Copyright"
+  }
+}

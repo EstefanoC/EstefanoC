@@ -1,616 +1,587 @@
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                              Home - Nav
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 .home .home-nav > ul {
-    list-style: none;
+  list-style: none;
 }
 .home .home-nav .row {
-    height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
 }
-.mainHome + nav,
-.mainHome ~ footer,
-.mainHome ~ .Error404 {
-    display: none;
+.mainHome + .grid-main {
+  display: none;
 }
 .home .home-nav .leaveTop {
-    transition: ease all 0.5s;
-    transform: translateY(-50vh);
+  transition: ease all 0.5s;
+  transform: translateY(-50vh);
 }
 .home .home-nav .leaveCenter {
-    transition: ease all 0.5s;
-    transform: translateY(-100vh);
+  transition: ease all 0.5s;
+  transform: translateY(-100vh);
 }
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                              Nav - navTop - bg-navTop
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 .home .navTop {
-    overflow-y: none;
-    position: relative;
-    background: #1e1e1e;
-    height: 100%;
-    min-height: 200px;
-    clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
+  overflow-y: none;
+  position: relative;
+  background: #1e1e1e;
+  height: 100%;
+  min-height: 200px;
+  clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
 }
-.home .navTop::after{
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-    background: var(--pri);
-    display: block;
-    content: '';
-    position: relative;
-    bottom: 21%;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    transition: ease all .5s;
+.home .navTop::after {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  background: var(--pri);
+  display: block;
+  content: "";
+  position: relative;
+  bottom: 21%;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transition: ease all 0.5s;
 }
-.home .navTop::before{
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-    background: black;
-    display: block;
-    content: '';
-    position: relative;
-    bottom: -78%;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+.home .navTop::before {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  background: black;
+  display: block;
+  content: "";
+  position: relative;
+  bottom: -78%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
-.home .navTop:hover::after{
-    transform: translate(100%, -20%);
+.home .navTop:hover::after {
+  transform: translate(100%, -20%);
 }
 .home .navTop ul {
-    margin-top: 2vh;
-    padding-left: 4vh!important;
+  margin-top: 2vh;
+  padding-left: 4vh !important;
 }
 .home .navTop-link {
-    position: absolute;
-    top: 15%;
+  position: absolute;
+  top: 15%;
 }
 .home .navTop .navTop-link button {
-    transition: ease all .5s;
-    background: var(--pri);
-    box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%), inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
-    text-shadow: 0 0 3px #1e1e1e;
-    color: var(--comple1);
-    font-size: 2.5vw;
-    width: 30vw;
-    border-radius: 0;
-    border: none;
-    padding: 1.5vw 0.5vw;
-    clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
+  transition: ease all 0.5s;
+  background: var(--pri);
+  box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%),
+    inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
+  text-shadow: 0 0 3px #1e1e1e;
+  color: var(--comple1);
+  font-size: 2.5vw;
+  width: 30vw;
+  border-radius: 0;
+  border: none;
+  padding: 1.5vw 0.5vw;
+  clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
 }
-@media (min-width:2500px) {
-    .home .navTop .navTop-link button {
-        font-size: 2vw;
-        padding: 1vw 0.5vw;
-    }
+@media (min-width: 2500px) {
+  .home .navTop .navTop-link button {
+    font-size: 2vw;
+    padding: 1vw 0.5vw;
+  }
 }
-@media (max-width:1080px) {
-    .home .navTop .navTop-link button {
-        font-size: 1.8rem;
-        width: 80vw;
-    }
+@media (max-width: 1080px) {
+  .home .navTop .navTop-link button {
+    font-size: 1.8rem;
+    width: 80vw;
+  }
 }
 .home .navTop .navTop-link button:hover,
 .home .navTop .navTop-link button:focus,
-.home .navTop .navTop-link button:active
- {
-     box-shadow: none;
-    text-shadow: none;
-    background-color: var(--pri);
-    transform: scale(1.1);
+.home .navTop .navTop-link button:active {
+  box-shadow: none;
+  text-shadow: none;
+  background-color: var(--pri);
+  transform: scale(1.1);
 }
 .home ul li .bg-navTop {
-    position: absolute;
-    bottom: 0;
-    font-size: 2vh;
-    background: #1e1e1e;
-    height: 100%;
-    user-select: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 2vh;
+  background: #1e1e1e;
+  height: 100%;
+  user-select: none;
 }
 .home ul li .bg-navTop::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background: #1e1e1e;
-    opacity: .8;
-    transition: ease all 0.5s;
-    height: 110%;
-    width: 110%;
-    user-select: none;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #1e1e1e;
+  opacity: 0.8;
+  transition: ease all 0.5s;
+  height: 110%;
+  width: 110%;
+  user-select: none;
 }
 .home ul li.navTop:hover .bg-navTop::after {
-    opacity: 0;
+  opacity: 0;
 }
 .home .list-NavTop {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 .home .list-NavTop li {
-    position: relative;
-    top: -16vw;
-    padding-left: 2vh;
-    font-size: 1.5vw;
-    text-align: left;
-    letter-spacing: 0.1vh;
+  position: relative;
+  top: -16vw;
+  padding-left: 2vh;
+  font-size: 1.5vw;
+  text-align: left;
+  letter-spacing: 0.1vh;
 }
-@media (min-width:2000px) {
-    .home .list-NavTop li {
-        top: -12vw;
-        font-size: 1vw;
-    }
+@media (min-width: 2000px) {
+  .home .list-NavTop li {
+    top: -12vw;
+    font-size: 1vw;
+  }
 }
-@media (max-width:1450px) {
-    .home .list-NavTop li {
-        top: -21vw;
-        font-size: 2vw;
-    }
+@media (max-width: 1450px) {
+  .home .list-NavTop li {
+    top: -21vw;
+    font-size: 2vw;
+  }
 }
-@media (max-width:1150px) {
-    .home .list-NavTop li {
-        top: -10vw;
-        font-size: 2vw;
-    }
+@media (max-width: 1150px) {
+  .home .list-NavTop li {
+    top: -10vw;
+    font-size: 2vw;
+  }
 }
-@media (max-width:1150px) and (max-height:750px) {
-    .home .list-NavTop li {
-        top: -20vw;
-        font-size: 2vw;
-    }
+@media (max-width: 1150px) and (max-height: 750px) {
+  .home .list-NavTop li {
+    top: -20vw;
+    font-size: 2vw;
+  }
 }
-@media (max-width:980px) {
-    .home .list-NavTop li {
-        top: -14vw;
-        font-size: 2vw;
-    }
+@media (max-width: 980px) {
+  .home .list-NavTop li {
+    top: -14vw;
+    font-size: 2vw;
+  }
 }
-@media (max-width:725px) {
-    .home .list-NavTop li {
-        top: -39vw;
-        font-size: 1.5rem;
-    }
+@media (max-width: 725px) {
+  .home .list-NavTop li {
+    top: -39vw;
+    font-size: 1.5rem;
+  }
 }
-@media (max-width:550px) {
-    .home .list-NavTop li {
-        top: -25vw;
-        left: -5vw;
-        font-size: 1rem;
-    }
+@media (max-width: 550px) {
+  .home .list-NavTop li {
+    top: -25vw;
+    left: -5vw;
+    font-size: 1rem;
+  }
 }
-@media (max-width:430px) {
-    .home .list-NavTop li {
-        top: -19vw;
-        left: -8vw;
-        font-size: 0.8rem;
-    }
+@media (max-width: 430px) {
+  .home .list-NavTop li {
+    top: -19vw;
+    left: -8vw;
+    font-size: 0.8rem;
+  }
 }
-@media (max-width:300px) {
-    .home .list-NavTop li {
-        top: -7vw;
-        left: -9vw;
-        font-size: 0.6rem;
-    }
+@media (max-width: 300px) {
+  .home .list-NavTop li {
+    top: -7vw;
+    left: -9vw;
+    font-size: 0.6rem;
+  }
 }
 .home ul li .bg-navTop .typed {
-    color: #e6e6e6;
+  color: #e6e6e6;
 }
 .home ul li .bg-navTop li .blue1 {
-    color: #9cdcfe;
+  color: #9cdcfe;
 }
 .home ul li .bg-navTop li .blue2 {
-    color: #569cd6;
+  color: #569cd6;
 }
 .home ul li .bg-navTop li .purple {
-    color: #a586b6;
+  color: #a586b6;
 }
 .home ul li .bg-navTop li .yellow {
-    color: #dccd79;
+  color: #dccd79;
 }
 .home ul li .bg-navTop li .green1 {
-    color: #438a55;
+  color: #438a55;
 }
 .home ul li .bg-navTop li .green2 {
-    color: #4ec9b0;
+  color: #4ec9b0;
 }
 .home ul li .bg-navTop li .red {
-    color: #ce9178;
+  color: #ce9178;
 }
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                              Nav - navCenter - bg-navCenter
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 .home .navCenter {
-    overflow-y: none;
-    position: relative;
-    top: -20.5%;
-    background: center / cover url(../../media/bg-navcenter.jpg);
-    height: 125.5%;
-    min-height: 200px;
-    clip-path: polygon(0 16%, 100% 0%, 100% 80%, 0% 100%);
+  overflow-y: none;
+  position: relative;
+  top: -20.5%;
+  background: center / cover url(../../media/bg-navcenter.jpg);
+  height: 125.5%;
+  min-height: 200px;
+  clip-path: polygon(0 16%, 100% 0%, 100% 80%, 0% 100%);
 }
-.home .navCenter::before{
-    clip-path: polygon(0 16%, 100% 0, 100% 80%, 0 100%);
-    background: black;
-    display: block;
-    content: '';
-    position: relative;
-    top: -108.7%;
-    height: 125.5%;
-    width: 160%;
-    z-index: 1;
+.home .navCenter::before {
+  clip-path: polygon(0 16%, 100% 0, 100% 80%, 0 100%);
+  background: black;
+  display: block;
+  content: "";
+  position: relative;
+  top: -108.7%;
+  height: 125.5%;
+  width: 160%;
+  z-index: 1;
 }
-.home .navCenter::after{
-    clip-path: polygon(0 16%, 100% 0, 100% 80%, 0 100%);
-    background: black;
-    display: block;
-    content: '';
-    position: relative;
-    bottom: 47.6%;
-    height: 125.5%;
-    width: 104%;
-    z-index: 1;
+.home .navCenter::after {
+  clip-path: polygon(0 16%, 100% 0, 100% 80%, 0 100%);
+  background: black;
+  display: block;
+  content: "";
+  position: relative;
+  bottom: 47.6%;
+  height: 125.5%;
+  width: 104%;
+  z-index: 1;
 }
 .home .navCenter ul {
-    padding-left: 4vh!important;
+  padding-left: 4vh !important;
 }
 .home .navCenter-link {
-    position: absolute;
-    top: 45%;
+  position: absolute;
+  top: 45%;
 }
 .home .navCenter .navCenter-link button {
-    transition: ease all .5s;
-    background: var(--pri);
-    box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%), inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
-    text-shadow: 0 0 3px #1e1e1e;
-    color: var(--comple1);
-    font-size: 2.5vw;
-    width: 30vw;
-    border-radius: 0;
-    border: none;
-    padding: 1.5vw 0.5vw;
-    clip-path: polygon(0 16%, 100% 2%, 101% 80%, 0% 100%);
+  transition: ease all 0.5s;
+  background: var(--pri);
+  box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%),
+    inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
+  text-shadow: 0 0 3px #1e1e1e;
+  color: var(--comple1);
+  font-size: 2.5vw;
+  width: 30vw;
+  border-radius: 0;
+  border: none;
+  padding: 1.5vw 0.5vw;
+  clip-path: polygon(0 16%, 100% 2%, 101% 80%, 0% 100%);
 }
-@media (min-width:2500px) {
-    .home .navCenter .navCenter-link button {
-        font-size: 2vw;
-        padding: 1vw 0.5vw;
-    }
+@media (min-width: 2500px) {
+  .home .navCenter .navCenter-link button {
+    font-size: 2vw;
+    padding: 1vw 0.5vw;
+  }
 }
-@media (max-width:1080px) {
-    .home .navCenter .navCenter-link button {
-        font-size: 1.8rem;
-        width: 80vw;
-    }
+@media (max-width: 1080px) {
+  .home .navCenter .navCenter-link button {
+    font-size: 1.8rem;
+    width: 80vw;
+  }
 }
 .home .navCenter .navCenter-link button:hover,
 .home .navCenter .navCenter-link button:focus,
-.home .navCenter .navCenter-link button:active
- {  
-    box-shadow: none;
-    text-shadow: none;
-    background-color: var(--pri);
-    transform: scale(1.1);
+.home .navCenter .navCenter-link button:active {
+  box-shadow: none;
+  text-shadow: none;
+  background-color: var(--pri);
+  transform: scale(1.1);
 }
 .home ul li .bg-navCenter {
-    position: absolute;
-    top: 1vh;
-    font-size: 2vw;
-    height: 100%;
-    user-select: none;
+  position: absolute;
+  top: 1vh;
+  font-size: 2vw;
+  height: 100%;
+  user-select: none;
 }
 .home ul li .bg-navCenter::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background: #1e1e1e;
-    opacity: .8;
-    transition: ease all 0.5s;
-    height: 110%;
-    width: 110%;
-    user-select: none;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #1e1e1e;
+  opacity: 0.8;
+  transition: ease all 0.5s;
+  height: 110%;
+  width: 110%;
+  user-select: none;
 }
 .home ul li.navCenter:hover .bg-navCenter::after {
-    opacity: 0;
+  opacity: 0;
 }
 .home ul li .bg-navCenter .bg-fluid {
-    pointer-events: none;
-    padding-top: 5.5vh;
-    width: 100vw;
-    height: auto;
+  pointer-events: none;
+  padding-top: 5.5vh;
+  width: 100vw;
+  height: auto;
 }
-@media (max-height:450px) {
-    .home ul li .bg-navCenter .bg-fluid {
-        padding-top: 10vh;
-    }
+@media (max-height: 450px) {
+  .home ul li .bg-navCenter .bg-fluid {
+    padding-top: 10vh;
+  }
 }
-@media (max-height:350px) {
-    .home ul li .bg-navCenter .bg-fluid {
-        padding-top: 15vh;
-    }
+@media (max-height: 350px) {
+  .home ul li .bg-navCenter .bg-fluid {
+    padding-top: 15vh;
+  }
 }
-@media (max-height:250px) {
-    .home ul li .bg-navCenter .bg-fluid {
-        padding-top: 23vh;
-    }
+@media (max-height: 250px) {
+  .home ul li .bg-navCenter .bg-fluid {
+    padding-top: 23vh;
+  }
 }
-@media (max-height:150px) {
-    .home ul li .bg-navCenter .bg-fluid {
-        padding-top: 28vh;
-    }
+@media (max-height: 150px) {
+  .home ul li .bg-navCenter .bg-fluid {
+    padding-top: 28vh;
+  }
 }
 .home ul li .bg-navCenter .bg-browser {
-    position: relative;
-    height: 100%;
-    background-color: #ffffff;
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
 }
 .home ul li .bg-navCenter .bg-browser svg {
-    margin: 0 0.3vw;
+  margin: 0 0.3vw;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserSearch {
-    position: relative;
+  position: relative;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserSearch input {
-    pointer-events: none;
-    border: 0.3vw solid #b9d5f8;
-    border-radius: 2vw;
-    background-color: #ffffff;
-    width: 75vw;
-    height: 3vw;
-    margin: 0.5vw 0;
+  pointer-events: none;
+  border: 0.3vw solid #b9d5f8;
+  border-radius: 2vw;
+  background-color: #ffffff;
+  width: 75vw;
+  height: 3vw;
+  margin: 0.5vw 0;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserSearch input:focus {
-    outline: none;
+  outline: none;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserSearch > span {
-    position: absolute;
-    left: 0;
-    top: 0.8vw;
-    padding-left: 3vw;
-    font-size: 1.5vw;
+  position: absolute;
+  left: 0;
+  top: 0.8vw;
+  padding-left: 3vw;
+  font-size: 1.5vw;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserSearch svg:nth-child(2) {
-    position: absolute;
-    left: 0;
-    top: 0.8vw;
+  position: absolute;
+  left: 0;
+  top: 0.8vw;
 }
-@media (max-width:767px) {
-    .home ul li .bg-navCenter .bg-browser .bg-browserSearch input {
-        width: 100vw;
-        height: 5vw;
-    }
-    .home ul li .bg-navCenter .bg-browser .bg-browserSearch > span {
-        font-size: 3vw;
-        padding-left: 4.5vw;
-    }
-    .home ul li .bg-navCenter .bg-browser .bg-browserSearch svg:nth-child(2) {
+@media (max-width: 767px) {
+  .home ul li .bg-navCenter .bg-browser .bg-browserSearch input {
+    width: 100vw;
+    height: 5vw;
+  }
+  .home ul li .bg-navCenter .bg-browser .bg-browserSearch > span {
+    font-size: 3vw;
+    padding-left: 4.5vw;
+  }
+  .home ul li .bg-navCenter .bg-browser .bg-browserSearch svg:nth-child(2) {
     top: 1vw;
-    font-size: 4vw!important;
-    }
+    font-size: 4vw !important;
+  }
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserAccount {
-    line-height: 0;
-    border: 0.3vh solid #e3e3e3;
-    border-radius: 2vw;
-    margin-left: 0.5vw;
+  line-height: 0;
+  border: 0.3vh solid #e3e3e3;
+  border-radius: 2vw;
+  margin-left: 0.5vw;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserAccount svg {
-    margin: 0;
+  margin: 0;
 }
 .home ul li .bg-navCenter .bg-browser .bg-browserAccount span {
-    font-size: 1.5vw;
-    margin-left : 0.5vw;
+  font-size: 1.5vw;
+  margin: 0 0.5vw;
 }
-    .home ul li .bg-navCenter .bg-browser svg:last-child {
-    margin: 0;
+.home ul li .bg-navCenter .bg-browser svg:last-child {
+  margin: 0;
 }
 .home ul li .bg-navCenter .bg-browser:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 4.5vw;
-    height: 0.5%;
-    width: 100%;
-    border-bottom: 0.2vw solid rgba(0,0,0,.1);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4.5vw;
+  height: 0.5%;
+  width: 100%;
+  border-bottom: 0.2vw solid rgba(0, 0, 0, 0.1);
 }
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                                                              Nav - navBottom - bg-navBottom
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 .home .navBottom {
-    overflow-y: none;
-    position: relative;
-    top: -20.5%;
-    height: 120.5%;
-    min-height: 200px;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  overflow-y: none;
+  position: relative;
+  top: -20.5%;
+  height: 120.5%;
+  min-height: 200px;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
 }
-.home .navBottom::before{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-    background: black;
-    display: block;
-    content: '';
-    position: relative;
-    top: -78.5%;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+.home .navBottom::before {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  background: black;
+  display: block;
+  content: "";
+  position: relative;
+  top: -78.5%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
-.home .navBottom::after{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-    background: var(--pri);
-    display: block;
-    content: '';
-    transition: ease all .5s;
-    position: relative;
-    top: -179.6%;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
+.home .navBottom::after {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  background: var(--pri);
+  display: block;
+  content: "";
+  transition: ease all 0.5s;
+  position: relative;
+  top: -179.6%;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
-.home .navBottom:hover::after{
-    transform: translate(-100%, 20%);
+.home .navBottom:hover::after {
+  transform: translate(-100%, 20%);
 }
 .home .navBottom ul {
-    padding-left: 4vh!important;
+  padding-left: 4vh !important;
 }
 .home .navBottom-link {
-    position: absolute;
-    top: 40%;
+  position: absolute;
+  top: 40%;
 }
 .home .navBottom .navBottom-link button {
-    font-size: 5vh;
-    border-radius: 2vh;
-    border: solid #2f96ce;
-    padding: 3vh;
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  font-size: 5vh;
+  border-radius: 2vh;
+  border: solid #2f96ce;
+  padding: 3vh;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
 }
 .home .navBottom .navBottom-link button {
-    transition: ease all .5s;
-    background: var(--pri);
-    box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%), inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
-    text-shadow: 0 0 3px #1e1e1e;
-    color: var(--comple1);
-    font-size: 2.5vw;
-    width: 30vw;
-    border-radius: 0;
-    border: none;
-    padding: 1.5vw 0.5vw;
-    clip-path: polygon(0 16%, 100% 2%, 101% 80%, 0% 100%);
+  transition: ease all 0.5s;
+  background: var(--pri);
+  box-shadow: inset 5px -10px 120px 0px rgb(30 30 30 / 39%),
+    inset 0px 11px 101px -5px rgb(30 30 30 / 39%);
+  text-shadow: 0 0 3px #1e1e1e;
+  color: var(--comple1);
+  font-size: 2.5vw;
+  width: 30vw;
+  border-radius: 0;
+  border: none;
+  padding: 1.5vw 0.5vw;
+  clip-path: polygon(0 16%, 100% 2%, 101% 80%, 0% 100%);
 }
-@media (min-width:2500px) {
-    .home .navBottom .navBottom-link button {
-        font-size: 2vw;
-        padding: 1vw 0.5vw;
-    }
+@media (min-width: 2500px) {
+  .home .navBottom .navBottom-link button {
+    font-size: 2vw;
+    padding: 1vw 0.5vw;
+  }
 }
-@media (max-width:1080px) {
-    .home .navBottom .navBottom-link button {
-        font-size: 1.8rem;
-        width: 80vw;
-    }
+@media (max-width: 1080px) {
+  .home .navBottom .navBottom-link button {
+    font-size: 1.8rem;
+    width: 80vw;
+  }
 }
 .home .navBottom .navBottom-link button:hover,
 .home .navBottom .navBottom-link button:focus,
-.home .navBottom .navBottom-link button:active
- {
-    box-shadow: none;
-    text-shadow: none;
-    background-color: var(--pri);
-    transform: scale(1.1);
+.home .navBottom .navBottom-link button:active {
+  box-shadow: none;
+  text-shadow: none;
+  background-color: var(--pri);
+  transform: scale(1.1);
 }
 .home ul li .bg-navBottom {
-    position: absolute;
-    top: 0;
-    background: 0 86% / cover url(../../media/bg-navBottom.jpg);
-    filter: blur(0.5vh);
-    height: 110%;
-    width: 100%;
-    user-select: none;
+  position: absolute;
+  top: 0;
+  background: 0 86% / cover url(../../media/bg-navBottom.jpg);
+  filter: blur(0.5vh);
+  height: 110%;
+  width: 100%;
+  user-select: none;
 }
 .home ul li .bg-navBottom::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background: #1e1e1e;
-    opacity: .8;
-    transition: ease all 0.5s;
-    height: 110%;
-    width: 110%;
-    user-select: none;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #1e1e1e;
+  opacity: 0.8;
+  transition: ease all 0.5s;
+  height: 110%;
+  width: 110%;
+  user-select: none;
 }
 .home ul li.navBottom:hover .bg-navBottom::after {
-    opacity: 0;
+  opacity: 0;
 }
 .home ul li .bg-navBottomPhone {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: 100% 28% / cover url(../../media/phone.svg) no-repeat;
-    height: 100%;
-    width: 51%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: 100% 28% / cover url(../../media/phone.svg) no-repeat;
+  height: 100%;
+  width: 51%;
 }
 .home ul li .bg-navBottomPhone::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background: #1e1e1e;
-    opacity: .8;
-    transition: ease all 0.5s;
-    height: 100%;
-    width: 110%;
-    user-select: none;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #1e1e1e;
+  opacity: 0.8;
+  transition: ease all 0.5s;
+  height: 100%;
+  width: 110%;
+  user-select: none;
 }
 .home ul li:hover .bg-navBottomPhone::after {
-    opacity: 0;
+  opacity: 0;
 }
 .home ul li .bg-navBottomPhone span {
+  pointer-events: none;
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  font-size: 2.5vw;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+@media (max-height: 400px) {
+  .home ul li .bg-navBottomPhone span {
     pointer-events: none;
     position: absolute;
-    top: 10%;
+    top: 13%;
     left: 4%;
     font-size: 2.5vw;
     width: 100%;
     height: 100%;
     color: #ffffff;
+  }
 }
-@media (max-height:400px) {
-    .home ul li .bg-navBottomPhone span {
-        pointer-events: none;
-        position: absolute;
-        top: 13%;
-        left: 4%;
-        font-size: 2.5vw;
-        width: 100%;
-        height: 100%;
-        color: #ffffff;
-    }
+@media (max-width: 650px) {
+  .home ul li .bg-navBottomPhone span {
+    pointer-events: none;
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    font-size: 3vw;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+  }
 }
-@media (max-width:650px) {
-    .home ul li .bg-navBottomPhone span {
-        pointer-events: none;
-        position: absolute;
-        top: 13%;
-        left: 4%;
-        font-size: 3vw;
-        width: 100%;
-        height: 100%;
-        color: #ffffff;
-    }
-}
-@media (max-width:250px) {
-    .home ul li .bg-navBottomPhone span {
-        pointer-events: none;
-        position: absolute;
-        top: 13%;
-        left: 4%;
-        font-size: 5vw;
-        width: 100%;
-        height: 100%;
-        color: #ffffff;
-    }
-    .home ul li .bg-navBottomPhone {
-        position: absolute;
-        right: 0;
-        top: 0;
-        background: 100% 28% / cover url(../../media/phone.svg) no-repeat;
-        height: 100%;
-        width: 100%;
-    }
+@media (max-width: 250px) {
+  .home ul li .bg-navBottomPhone span {
+    pointer-events: none;
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+  }
+  .home ul li .bg-navBottomPhone {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: 100% 28% / cover url(../../media/phone.svg) no-repeat;
+    height: 100%;
+    width: 100%;
+  }
 }

@@ -1,118 +1,235 @@
 nav.navbar {
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1010;
-    background-color: var(--pri);
-    border-bottom: 1px solid var(--comple2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1010;
+  background-color: var(--pri);
+  transition: ease all 0.5s;
+  border-bottom: 1px solid var(--comple2);
+  grid-area: header;
 }
 nav.navbar .img-logo {
-    cursor: pointer;
-    margin-left: 1vw;
-    width: 5rem;
-    height: auto;
+  cursor: pointer;
+  margin: 0 1vw;
+  width: 5rem;
+  height: auto;
 }
 nav.navbar .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 75vw;
-    justify-content: start;
-    margin-right: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: start;
+  margin-right: 2rem;
 }
 nav.navbar .nav-links {
-    font-size: 1.5rem;
-    color: var(--comple1);
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: var(--comple1);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s, padding 0.2s ease-out;
 }
 nav.navbar .nav-links.active {
-    padding-bottom: 3rem;
-    background: var(--comple2);
+  padding-bottom: 3rem;
+  background: var(--comple2);
 }
 nav.navbar .nav-links:hover {
-    overflow-y: none;
-    color: var(--sec);
-    background: var(--comple2);
-    text-decoration: none;
-    padding-bottom: 3rem;
-    transition: all 0.2s ease-out;
+  overflow-y: none;
+  color: var(--sec);
+  background: var(--comple2);
+  text-decoration: none;
+  padding-bottom: 3rem;
 }
 nav.navbar .menu-icon {
-    display: none;
+  display: none;
 }
-@media (min-width:959px) {
-    nav.navbar {
-        overflow: hidden;
-    }
+nav.navbar .switch-container {
+  flex: auto;
+  text-align: -webkit-center;
+}
+nav.navbar .switch-container .switch {
+  position: relative;
+  display: flex;
+  border-radius: 1000px;
+  background: var(--comple1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+nav.navbar .switch-container .switch::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background: var(--comple2);
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+  transition: 0.5s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+nav.navbar .switch-container.active .switch::after {
+  background: var(--comple1);
+}
+nav.navbar .switch-container.active .switch {
+  background: var(--comple2);
+}
+nav.navbar .switch-container.active .switch span:last-child,
+nav.navbar .switch-container .switch span:first-child {
+  opacity: 0;
+}
+nav.navbar .switch-container.active .switch span:first-child {
+  opacity: 1;
+}
+nav.navbar .switch-container.active .switch::after {
+  left: calc(100% - 30px);
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+  opacity: 1;
+  transition: 0.5s ease all;
+}
+nav.navbar .country-select {
+  position: relative;
+  display: block;
+  flex: auto;
+  text-align: center;
+}
+nav.navbar .country-select .active,
+nav.navbar .country-select .deactivate {
+  transition: ease all .5s;
+  cursor: pointer;
+  color: var(--comple1);
+}
+nav.navbar .country-select .active {
+  transform: scale(1);
+  filter: grayscale(0);
+}
+nav.navbar .country-select .deactivate {
+  transform: scale(0.8);
+  filter: grayscale(1);
+}
+nav.navbar .country-select .title-code {
+  display: block;
+  top: 100%;
+  position: absolute;
+  transition: ease all .5s;
+}
+nav.navbar .country-select .title-code.es {
+  transform: scale(0) translateX(-50%);
+}
+nav.navbar .country-select .title-code.en {
+  transform: scale(0) translateX(10%);
+}
+nav.navbar .country-select .active .title-code.en {
+  transform: scale(1) translateX(10%);
+}
+nav.navbar .country-select .active .title-code.es {
+  transform: scale(1) translateX(-50%);
+}
+nav.navbar .country-select .deactivate:hover {
+  transform: scale(0.9);
+  filter: grayscale(0.5);
+}
+nav.navbar .country-select .deactivate:hover .title-code.es {
+  top: -100%;
+  transform: scale(1) translateX(-50%);
+}
+nav.navbar .country-select .deactivate:hover .title-code.en {
+  top: -100%;
+  transform: scale(1) translateX(25%);
+}
+@media (min-width: 959px) {
+  nav.navbar {
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 960px) {
-    nav.navbar {
-        overflow: none;
-    }
-    nav.navbar .nav-menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 100%;
-        left: -100%;
-        opacity: 1;
-        border-top: 1px solid var(--comple2);
-        transition: all 0.5s ease;
-    }
-    nav.navbar .nav-menu.active {
-        background: var(--pri);
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-    }
-    nav.navbar .nav-links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-    nav.navbar .nav-links[href='/SobreMi'] {
-        clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
-    }
-    nav.navbar .nav-links[href='/Portafolio'] {
-        padding-top: 5%;
-        margin-top: -5%;
-        clip-path: polygon(0 16%, 100% 0%, 100% 80%, 0% 100%);
-    }
-    nav.navbar .nav-links[href='/Contactame'] {
-        padding-top: 5%;
-        margin-top: -5%;
-        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
-    }
-    nav.navbar .nav-links:hover {
-        background: var(--comple2);
-        border-radius: 0;
-    }
-    nav.navbar .menu-icon {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
-    }
-    nav.navbar .menu-icon svg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
-    }
-    nav.navbar .menu-icon svg.move {
-        transition: all 0.5s ease;
-        opacity: 0;
-    }
-    nav.navbar .menu-icon svg.move-out {
-        transition: all 0.5s ease;
-        opacity: 1;
-    }
+  nav.navbar {
+    overflow: none;
+  }
+  nav.navbar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    opacity: 1;
+    border-top: 1px solid var(--comple2);
+    transition: all 0.5s ease;
+  }
+  nav.navbar .nav-menu.active {
+    background: var(--pri);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  nav.navbar .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  nav.navbar .nav-links[href="/SobreMi"] {
+    clip-path: polygon(0 0, 100% 0%, 101% 80%, 0% 100%);
+  }
+  nav.navbar .nav-links[href="/Portafolio"] {
+    padding-top: 5%;
+    margin-top: -5%;
+    clip-path: polygon(0 16%, 100% 0%, 100% 80%, 0% 100%);
+  }
+  nav.navbar .nav-links[href="/Contactame"] {
+    padding-top: 5%;
+    margin-top: -5%;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  }
+  nav.navbar .nav-links:hover {
+    background: var(--comple2);
+    border-radius: 0;
+  }
+  nav.navbar .menu-icon {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+  }
+  nav.navbar .menu-icon svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  nav.navbar .menu-icon svg.move {
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  nav.navbar .menu-icon svg.move-out {
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+}
+
+/* Dark mode */
+.dark nav.navbar {
+  border-bottom: 1px solid var(--comple1);
+}
+.dark nav.navbar .nav-links.active {
+  background: var(--comple1);
+  color: var(--comple2);
+}
+.dark nav.navbar .nav-links:hover {
+  color: var(--sec);
+  background: var(--comple1);
 }

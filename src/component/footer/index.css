@@ -1,36 +1,48 @@
 footer.footer {
-    width: 100%;
-    background-color: var(--pri);
-    border-top: 1px solid var(--comple2);
-    border-bottom: 1px solid var(--comple2);
+  width: 100%;
+  background-color: var(--pri);
+  border-top: 1px solid var(--comple2);
+  border-bottom: 1px solid var(--comple2);
+  grid-area: footer;
+  transition: ease all 0.5s;
 }
 footer.footer .footerBrand .img-logo {
-    cursor: pointer;
-    width: 10rem;
-    height: auto;
+  cursor: pointer;
+  width: 10rem;
+  height: auto;
 }
 footer.footer .footer-menu {
-    font-size: 1.5rem;
-    list-style: none;
+  font-size: 1.5rem;
+  list-style: none;
 }
 footer.footer .footer-menu li a {
-    color: var(--comple1);
-    text-decoration: none;
+  color: var(--comple1);
+  text-decoration: none;
 }
 footer.footer .footer-menu li a:hover {
-    color: var(--sec);
+  color: var(--sec);
 }
 footer.footer .footer-up svg {
-    transition: ease all 0.5s;
-    transform: rotate(180deg);
-    cursor: pointer;
+  transition: ease all 0.5s;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 footer.footer .footer-up strong {
-    font-size: 1.3rem;
+  color: var(--comple1);
+  font-size: 1.3rem;
 }
 footer.footer .footer-up h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 footer.footer small {
-    color: #6c757dad;
+  color: #6c757dad;
+}
+
+/* Dark Mode */
+.dark footer.footer {
+  border-top: 1px solid var(--comple1);
+  border-bottom: 1px solid var(--comple1);
+}
+.dark footer.footer .footer-up strong {
+  color: var(--comple1);
 }

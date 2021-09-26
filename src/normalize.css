@@ -100,10 +100,10 @@ fieldset {
 }
 legend {
   box-sizing: border-box;
-  color: inherit; 
+  color: inherit;
   display: table;
   max-width: 100%;
-  padding: 0; 
+  padding: 0;
   white-space: normal;
 }
 progress {
@@ -115,7 +115,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
-  padding: 0; 
+  padding: 0;
 }
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -123,14 +123,14 @@ textarea {
 }
 [type="search"] {
   -webkit-appearance: textfield;
-  outline-offset: -2px; 
+  outline-offset: -2px;
 }
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  font: inherit; 
+  font: inherit;
 }
 details {
   display: block;

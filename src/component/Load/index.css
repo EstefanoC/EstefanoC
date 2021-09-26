@@ -1,47 +1,47 @@
 .bg-pri + nav,
 .bg-pri ~ footer {
-    display: none;
+  display: none;
 }
 .bg-pri {
-    position: fixed;
-    top: 0;
-    background-color: var(--pri);
-    transition: ease all .5s;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  background-color: var(--pri);
+  transition: ease all 0.5s;
+  z-index: 1000;
 }
 .bg-pri.fade {
-    opacity: 0!important;
+  opacity: 0 !important;
 }
 .bg-pri.fade.none {
-    display: none;
+  display: none;
 }
 .svgLogo {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
-.svgLogo path { 
-    stroke: var(--comple2);
-    stroke-width: 2px;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    stroke-linecap: round;
+.svgLogo path {
+  stroke: var(--comple2);
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  stroke-linecap: round;
 }
 .textLogo {
-    position: absolute;
-    top: 0;
-    right: 10vw;
-    width: 30vw;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 10vw;
+  width: 30vw;
+  height: 100vh;
 }
-@media (max-width:1550px) {
-    .textLogo {
-        right: 7vw;
-    }
+@media (max-width: 1550px) {
+  .textLogo {
+    right: 7vw;
+  }
 }
-@media (max-width:1400px) {
-    .textLogo {
-        top: -5vw;
-       right: 4vw;
-    }
+@media (max-width: 1400px) {
+  .textLogo {
+    top: -5vw;
+    right: 4vw;
+  }
 }
