@@ -166,21 +166,21 @@
 }
 .about .firstSection .tab .tabCo .icon1 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   grid-gap: 1rem 2rem;
   list-style: none;
   align-items: center;
 }
 .about .firstSection .tab .tabCo .icon2 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   grid-gap: 2rem;
   list-style: none;
   align-items: center;
 }
 .about .firstSection .tab .tabCo .icon3 {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   grid-gap: 2rem;
   list-style: none;
   align-items: center;
@@ -188,7 +188,7 @@
 }
 .about .firstSection .tab .tabCer {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem 2rem;
   list-style: none;
   align-items: stretch;

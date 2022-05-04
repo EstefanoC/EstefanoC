@@ -105,7 +105,7 @@ nav.navbar .country-select {
 }
 nav.navbar .country-select .active,
 nav.navbar .country-select .deactivate {
-  transition: ease all .5s;
+  transition: ease all 0.5s;
   cursor: pointer;
   color: var(--comple1);
 }
@@ -121,7 +121,7 @@ nav.navbar .country-select .title-code {
   display: block;
   top: 100%;
   position: absolute;
-  transition: ease all .5s;
+  transition: ease all 0.5s;
 }
 nav.navbar .country-select .title-code.es {
   transform: scale(0) translateX(-50%);
@@ -155,6 +155,7 @@ nav.navbar .country-select .deactivate:hover .title-code.en {
 @media screen and (max-width: 960px) {
   nav.navbar {
     overflow: none;
+    flex-wrap: nowrap;
   }
   nav.navbar .nav-menu {
     display: flex;
@@ -202,7 +203,7 @@ nav.navbar .country-select .deactivate:hover .title-code.en {
     position: relative;
     display: block;
     height: 100%;
-    width: auto;
+    width: 80px;
     cursor: pointer;
   }
   nav.navbar .menu-icon svg {
