@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/EstefanoC/static/css/main.d13ee94d.chunk.css",
-    "main.js": "/EstefanoC/static/js/main.d61d0702.chunk.js",
-    "main.js.map": "/EstefanoC/static/js/main.d61d0702.chunk.js.map",
+    "main.css": "/EstefanoC/static/css/main.e0a9da34.chunk.css",
+    "main.js": "/EstefanoC/static/js/main.b84835b7.chunk.js",
+    "main.js.map": "/EstefanoC/static/js/main.b84835b7.chunk.js.map",
     "runtime-main.js": "/EstefanoC/static/js/runtime-main.bbaaaa00.js",
     "runtime-main.js.map": "/EstefanoC/static/js/runtime-main.bbaaaa00.js.map",
     "static/css/2.5dbd8743.chunk.css": "/EstefanoC/static/css/2.5dbd8743.chunk.css",
-    "static/js/2.8c527cc0.chunk.js": "/EstefanoC/static/js/2.8c527cc0.chunk.js",
-    "static/js/2.8c527cc0.chunk.js.map": "/EstefanoC/static/js/2.8c527cc0.chunk.js.map",
+    "static/js/2.83b3da6d.chunk.js": "/EstefanoC/static/js/2.83b3da6d.chunk.js",
+    "static/js/2.83b3da6d.chunk.js.map": "/EstefanoC/static/js/2.83b3da6d.chunk.js.map",
     "index.html": "/EstefanoC/index.html",
     "static/css/2.5dbd8743.chunk.css.map": "/EstefanoC/static/css/2.5dbd8743.chunk.css.map",
-    "static/css/main.d13ee94d.chunk.css.map": "/EstefanoC/static/css/main.d13ee94d.chunk.css.map",
-    "static/js/2.8c527cc0.chunk.js.LICENSE.txt": "/EstefanoC/static/js/2.8c527cc0.chunk.js.LICENSE.txt",
+    "static/css/main.e0a9da34.chunk.css.map": "/EstefanoC/static/css/main.e0a9da34.chunk.css.map",
+    "static/js/2.83b3da6d.chunk.js.LICENSE.txt": "/EstefanoC/static/js/2.83b3da6d.chunk.js.LICENSE.txt",
     "static/media/Ab1.jpg": "/EstefanoC/static/media/Ab1.73a777a6.jpg",
     "static/media/Ab2.jpg": "/EstefanoC/static/media/Ab2.d100c390.jpg",
     "static/media/Ab3.jpg": "/EstefanoC/static/media/Ab3.4f19d1e0.jpg",
@@ -53,7 +53,7 @@
     "static/media/bg-navBottom.jpg": "/EstefanoC/static/media/bg-navBottom.07bfb868.jpg",
     "static/media/bg-navcenter.jpg": "/EstefanoC/static/media/bg-navcenter.bf8ab26c.jpg",
     "static/media/bootstrap5.svg": "/EstefanoC/static/media/bootstrap5.f7e1f219.svg",
-    "static/media/css3.svg": "/EstefanoC/static/media/css3.6ec1697a.svg",
+    "static/media/css3.svg": "/EstefanoC/static/media/css3.541200b1.svg",
     "static/media/firebase.webp": "/EstefanoC/static/media/firebase.2b6253c0.webp",
     "static/media/fontAwesome.svg": "/EstefanoC/static/media/fontAwesome.e962781c.svg",
     "static/media/git.svg": "/EstefanoC/static/media/git.c0ad6253.svg",
@@ -62,7 +62,7 @@
     "static/media/json.gif": "/EstefanoC/static/media/json.98068eda.gif",
     "static/media/materialUi.svg": "/EstefanoC/static/media/materialUi.c0958f97.svg",
     "static/media/mongodb.png": "/EstefanoC/static/media/mongodb.f9743f13.png",
-    "static/media/nextjs.svg": "/EstefanoC/static/media/nextjs.88ec4608.svg",
+    "static/media/nextjs.svg": "/EstefanoC/static/media/nextjs.a9c6af17.svg",
     "static/media/phone.svg": "/EstefanoC/static/media/phone.f965d632.svg",
     "static/media/php.svg": "/EstefanoC/static/media/php.9e767523.svg",
     "static/media/portrait.jpg": "/EstefanoC/static/media/portrait.27931528.jpg",
@@ -76,8 +76,8 @@
   "entrypoints": [
     "static/js/runtime-main.bbaaaa00.js",
     "static/css/2.5dbd8743.chunk.css",
-    "static/js/2.8c527cc0.chunk.js",
-    "static/css/main.d13ee94d.chunk.css",
-    "static/js/main.d61d0702.chunk.js"
+    "static/js/2.83b3da6d.chunk.js",
+    "static/css/main.e0a9da34.chunk.css",
+    "static/js/main.b84835b7.chunk.js"
   ]
 }
