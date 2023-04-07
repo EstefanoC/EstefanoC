@@ -1,11 +1,8 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import { Icon1, Icon2, Icon3 } from "../../data/tecnologyItems";
 import { useTranslation } from "react-i18next";
 
-let userImage;
-
-const TabTecnology = (props) => {
+const TabTechnology = (props) => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -15,14 +12,11 @@ const TabTecnology = (props) => {
         {props.items.map((val) => {
           return Icon1.map((value, index) => {
             if (val === value.title) {
-              userImage =
-                require(`../../media/${value.img.toString()}`).default;
-
               return (
                 <li className="logo" key={index}>
                   <a href={value.url} target="_blank" rel="noopener noreferrer">
                     <img
-                      src={userImage}
+                      src={require(`../../media/${value.img.toString()}`)}
                       alt={value.title}
                       className="img-fluid"
                     />
@@ -39,14 +33,11 @@ const TabTecnology = (props) => {
         {props.items.map((val) => {
           return Icon2.map((value, index) => {
             if (val === value.title) {
-              userImage =
-                require(`../../media/${value.img.toString()}`).default;
-
               return (
                 <li className="logo" key={index}>
                   <a href={value.url} target="_blank" rel="noopener noreferrer">
                     <img
-                      src={userImage}
+                      src={require(`../../media/${value.img.toString()}`)}
                       alt={value.title}
                       className="img-fluid"
                     />
@@ -63,14 +54,11 @@ const TabTecnology = (props) => {
         {props.items.map((val) => {
           return Icon3.map((value, index) => {
             if (val === value.title) {
-              userImage =
-                require(`../../media/${value.img.toString()}`).default;
-
               return (
                 <li className="logo" key={index}>
                   <a href={value.url} target="_blank" rel="noopener noreferrer">
                     <img
-                      src={userImage}
+                      src={require(`../../media/${value.img.toString()}`)}
                       alt={value.title}
                       className="img-fluid"
                     />
@@ -89,4 +77,4 @@ const TabTecnology = (props) => {
   );
 };
 
-export default TabTecnology;
+export default TabTechnology;

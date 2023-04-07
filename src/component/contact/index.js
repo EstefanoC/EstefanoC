@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Form from "./form";
-import EmailIcon from "@material-ui/icons/Email";
-import MarkunreadMailboxIcon from "@material-ui/icons/MarkunreadMailbox";
+import EmailIcon from "@mui/icons-material/Email";
+import MarkunreadMailboxIcon from "@mui/icons-material/MarkunreadMailbox";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 

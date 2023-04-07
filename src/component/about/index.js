@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import Portrait from "../../media/portrait.jpg";
-import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import AboutKnowledge from "./AboutKnowledge";
 import { Button } from "react-bootstrap";
 import AboutList from "./aboutList";
@@ -63,23 +63,23 @@ const IndexAbout = () => {
                 </Tab>
               </Tabs>
             </Col>
-            <Col md={12} lg={{ span: 3 }}>
-              <h1 className="text-lg-right text-center mb-4 mb-lg-0 shadown-text">
+            <Col md={12} lg={{ span: 3 }} className="p-0">
+              <h1 className="text-sm-left mb-4 mb-lg-0 shadown-text">
                 <span>Junior</span> <span>Web</span> <span>Developer</span>
               </h1>
             </Col>
             <Col
               md={12}
               lg={3}
-              className="portrait text-center text-lg-left h-100"
+              className="portrait text-center text-lg-left h-100 p-0"
             >
               <header>
-                <h1 className="text-left d-none d-lg-block mb-0">
+                <h1 className="text-right d-none d-lg-block mb-0">
                   <span>Junior</span> <span>Web</span> <span>Developer</span>
                 </h1>
                 <img
                   src={Portrait}
-                  alt="Estefano Chacón"
+                  alt="Estefano Chacón Frontend Developer"
                   className="img-fluid"
                 />
               </header>

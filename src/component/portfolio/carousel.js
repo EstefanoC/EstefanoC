@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import {
   CarouselProvider,
@@ -24,19 +23,15 @@ const Carousel = (props) => {
       className="h-100"
     >
       <Slider>
-        {props.img.url.map((value, index) => {
-          userImage = require(`../../media/${value.toString()}`).default;
-
-          return (
-            <Slide index={index} key={`${index}${props.title}`}>
-              <img
-                src={userImage}
-                alt={`${props.title} ${index}`}
-                className="img-fluid"
-              />
-            </Slide>
-          );
-        })}
+        {props.img.url.map((value, index) => (
+          <Slide index={index} key={`${index}${props.title}`}>
+            <img
+              src={require(`../../media/${value.toString()}`)}
+              alt={`${props.title} ${index}`}
+              className="img-fluid"
+            />
+          </Slide>
+        ))}
       </Slider>
       <Row className="d-flex justify-content-between no-gutters">
         <Col xs={6}>

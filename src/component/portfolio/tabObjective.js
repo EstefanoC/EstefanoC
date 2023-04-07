@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 
 const TabObjective = (props) => {
   return (

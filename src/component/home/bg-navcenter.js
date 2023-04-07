@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import TypedReact from "../helpers/typed";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import RefreshIcon from "@material-ui/icons/Refresh";
-import SearchIcon from "@material-ui/icons/Search";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import RefreshIcon from "@mui/icons-material/Refresh";
+import SearchIcon from "@mui/icons-material/Search";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 import BgNavCenter from "../../media/bg-browser.jpg";
 import { useTranslation } from "react-i18next";
 

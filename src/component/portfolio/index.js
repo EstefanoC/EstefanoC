@@ -3,7 +3,7 @@ import { Container, Row, Col, Tab, ListGroup, Button } from "react-bootstrap";
 import Carousel from "./carousel";
 import TabTecnology from "./tabTecnology";
 import TabObjective from "./tabObjective";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { useTranslation } from "react-i18next";
 import "./index.css";
 

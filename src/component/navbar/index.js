@@ -1,17 +1,14 @@
-/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
-import WbSunnyIcon from "@material-ui/icons/WbSunny";
-import Brightness2Icon from "@material-ui/icons/Brightness2";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import Brightness2Icon from "@mui/icons-material/Brightness2";
 import { useTranslation } from "react-i18next";
 import Logo from "../../media/LogoEc.svg";
 import "./index.css";
 
-
 let userImage;
-
 
 const NavbarTop = ({ setDarkMode, darkMode }) => {
   const [path, setPath] = useState();
@@ -39,7 +36,7 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
         </Link>
       </div>
       <ul className={click ? "nav-menu active p-0" : "nav-menu p-0"}>
-        {t("navbar.nav-menu-li", {returnObjects: true}).map((item, index) => (
+        {t("navbar.nav-menu-li", { returnObjects: true }).map((item, index) => (
           <li key={index}>
             <Link
               className={`${path === item.url ? "active" : ""} ${item.cName}`}
@@ -66,12 +63,27 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
         </button>
       </div>
       <div className="country-select">
-          <ul className="m-0 p-0 list-unstyled d-flex justify-content-center">
-            {t("navbar.language-map", {returnObjects: true}).map(({code, title}) => {
-              userImage = require(`../../media/lang_${code.toString()}.png`).default;
-              return <li key={code} className={`${code === i18n.language ? 'active' : 'deactivate'}`} onClick={() => i18n.changeLanguage(code)} ><img src={userImage} alt={code} width="31" height="21" /><span className={`title-code ${code}`}>{title}</span></li>
-              })}
-          </ul>
+        <ul className="m-0 p-0 list-unstyled d-flex justify-content-center">
+          {t("navbar.language-map", { returnObjects: true }).map(
+            ({ code, title }) => (
+              <li
+                key={code}
+                className={`${
+                  code === i18n.language ? "active" : "deactivate"
+                }`}
+                onClick={() => i18n.changeLanguage(code)}
+              >
+                <img
+                  src={require(`../../media/lang_${code.toString()}.png`)}
+                  alt={code}
+                  width="31"
+                  height="21"
+                />
+                <span className={`title-code ${code}`}>{title}</span>
+              </li>
+            )
+          )}
+        </ul>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         <MenuIcon

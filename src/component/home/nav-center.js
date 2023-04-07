@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import BgNavCenter from "./bg-navcenter";
-import { useHistory } from "react-router-dom";
-import { motion, useCycle } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import { HomeVariantCenter } from "../helpers/animation";
 import { Container, Button } from "react-bootstrap/";
 import { useTranslation } from "react-i18next";
@@ -10,16 +9,16 @@ import { useTranslation } from "react-i18next";
 const NavLeft = (props) => {
   const [stop, setStop] = useState(null);
   const [start, setStart] = useState(null);
-  const [animateFinish, cycleAnimation] = useCycle("static", "finish");
-  const history = useHistory();
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const [t, i18n] = useTranslation("global");
 
   const handleOnClick = () => {
-    cycleAnimation();
+    setOpen(true);
     props.leaveTop();
 
     setTimeout(() => {
-      history.push("/Portfolio");
+      navigate("/Portfolio");
     }, 500);
   };
 
@@ -39,8 +38,8 @@ const NavLeft = (props) => {
   return (
     <>
       <motion.li
-        animate={animateFinish}
         variants={HomeVariantCenter}
+        animate={open ? "finish" : "static"}
         className="navCenter"
         onMouseEnter={MouseMove}
         onMouseLeave={MouseMove}

@@ -9,54 +9,52 @@ const AboutList = () => {
 
   return (
     <div className="tabCo p-3">
-      <h2 className="mb-3">
-        {t('about.knowledge.p1')}
-      </h2>
+      <h2 className="mb-3">{t("about.knowledge.p1")}</h2>
       <ul className="icon1 p-0 mb-5">
-        {Icon1.map((value, index) => {
-          userImage = require(`../../media/${value.img.toString()}`).default;
-
-          return (
-            <li className={`logo ${value.title}`} key={index}>
-              <a href={value.url} target="_blank" rel="noopener noreferrer">
-                <img src={userImage} alt={value.title} className="img-fluid" />
-                <strong className="d-block text-center">{value.title}</strong>
-              </a>
-            </li>
-          );
-        })}
+        {Icon1.map((value, index) => (
+          <li className={`logo ${value.title}`} key={index}>
+            <a href={value.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={require(`../../media/${value.img.toString()}`)}
+                alt={value.title}
+                className="img-fluid"
+              />
+              <strong className="d-block text-center">{value.title}</strong>
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <h3 className="mb-3">{t('about.knowledge.p2')}</h3>
+      <h3 className="mb-3">{t("about.knowledge.p2")}</h3>
       <ul className="icon2 p-0 mb-5">
-        {Icon2.map((value, index) => {
-          userImage = require(`../../media/${value.img.toString()}`).default;
-
-          return (
-            <li className="logo" key={index}>
-              <a href={value.url} target="_blank" rel="noopener noreferrer">
-                <img src={userImage} alt={value.title} className="img-fluid" />
-                <strong className="d-block text-center">{value.title}</strong>
-              </a>
-            </li>
-          );
-        })}
+        {Icon2.map((value, index) => (
+          <li className="logo" key={index}>
+            <a href={value.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={require(`../../media/${value.img.toString()}`)}
+                alt={value.title}
+                className="img-fluid"
+              />
+              <strong className="d-block text-center">{value.title}</strong>
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <h3 className="mb-3">{t('about.knowledge.p3')}</h3>
+      <h3 className="mb-3">{t("about.knowledge.p3")}</h3>
       <ul className="icon3 p-0 mb-5">
-        {Icon3.map((value, index) => {
-          userImage = require(`../../media/${value.img.toString()}`).default;
-
-          return (
-            <li className="logo" key={index}>
-              <a href={value.url} target="_blank" rel="noopener noreferrer">
-                <img src={userImage} alt={value.title} className="img-fluid" />
-                <strong className="d-block text-center">{value.title}</strong>
-              </a>
-            </li>
-          );
-        })}
+        {Icon3.map((value, index) => (
+          <li className="logo" key={index}>
+            <a href={value.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={require(`../../media/${value.img.toString()}`)}
+                alt={value.title}
+                className="img-fluid"
+              />
+              <strong className="d-block text-center">{value.title}</strong>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

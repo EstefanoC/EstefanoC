@@ -1,35 +1,55 @@
 import React, { useState } from "react";
 import { Form, Alert, Button } from "react-bootstrap";
-import SendIcon from "@material-ui/icons/Send";
+import SendIcon from "@mui/icons-material/Send";
 import { useForm } from "react-hook-form";
-import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
 
-export default function Formu() {
+export default function FormFunction() {
   const [alert, setAlert] = useState({ success: false, danger: false });
   const { register, handleSubmit, errors } = useForm();
   const [t, i18n] = useTranslation("global");
 
   const onSubmit = (data, e) => {
-    emailjs
-      .sendForm(
-        "Portfolio-contact",
-        "portfolioMenssage",
-        e.target,
-        "user_qsv0lLXmEOGVIlQLSMiWO"
-      )
-      .then(
-        (result) => {
-          setAlert({ success: true, danger: false });
-        },
-        (error) => {
-          setAlert({ success: false, danger: true });
-        }
-      );
+    console.log(data, e, "form");
+
+    // emailjs
+    //   .send(
+    //     "Portfolio-contact",
+    //     "portfolioMenssage",
+    //     data,
+    //     "user_qsv0lLXmEOGVIlQLSMiWO"
+    //   )
+    //   .then(
+    //     (response) => {
+    //       console.log(response.status, response.text);
+    //       setAlert({ success: true, danger: false });
+    //     },
+    //     (err) => {
+    //       console.error(err);
+    //       setAlert({ success: false, danger: true });
+    //     }
+    //   );
+
+    // emailjs
+    //   .sendForm(
+    //     "Portfolio-contact",
+    //     "portfolioMenssage",
+    //     e.target,
+    //     "user_qsv0lLXmEOGVIlQLSMiWO"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       setAlert({ success: true, danger: false });
+    //     },
+    //     (error) => {
+    //       console.error(error);
+    //       setAlert({ success: false, danger: true });
+    //     }
+    //   );
 
     setTimeout(() => {
       setAlert({ success: false, danger: false });
@@ -46,9 +66,13 @@ export default function Formu() {
             type="text"
             placeholder={t("contact.form-name-placeholder")}
             name="Name"
-            ref={register({ required: true, maxLength: 80, minLength: 3 })}
+            {...register("Name", {
+              required: true,
+              maxLength: 80,
+              minLength: 3,
+            })}
           />
-          {errors.Name && <p>{t("contact.form-name-error")}</p>}
+          {errors?.Name && <p>{t("contact.form-name-error")}</p>}
         </Form.Group>
         <Form.Group controlId="Email">
           <Form.Label>{t("contact.form-email-label")}</Form.Label>
@@ -56,9 +80,9 @@ export default function Formu() {
             type="email"
             name="Email"
             placeholder={t("contact.form-email-placeholder")}
-            ref={register({ required: true, pattern: emailRegex })}
+            {...register("Email", { required: true, pattern: emailRegex })}
           />
-          {errors.Email && <p>{t("contact.form-email-error")}</p>}
+          {errors?.Email && <p>{t("contact.form-email-error")}</p>}
         </Form.Group>
         <Form.Group controlId="Message">
           <Form.Label>{t("contact.form-message-label")}</Form.Label>
@@ -67,9 +91,9 @@ export default function Formu() {
             name="Message"
             rows={3}
             placeholder={t("contact.form-message-placeholder")}
-            ref={register({ required: true, minLength: 4 })}
+            {...register("Message", { required: true, minLength: 4 })}
           />
-          {errors.Message && <p>{t("contact.form-message-error")}</p>}
+          {errors?.Message && <p>{t("contact.form-message-error")}</p>}
         </Form.Group>
         <Button type="submit" className="p-3 m-3">
           {t("contact.form-button")}&nbsp;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import About from "../pages/about.js";
 import Portafolio from "../pages/portfolio.js";
@@ -15,19 +15,13 @@ const PageNav = () => {
   return (
     <div className={`grid-main ${darkMode ? "dark" : ""}`}>
       <Navbar setDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/AboutMe" exact>
-            <About />
-          </Route>
-          <Route path="/ContactMe" exact>
-            <Contactame />
-          </Route>
-          <Route path="/Portfolio" exact>
-            <Portafolio />
-          </Route>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/AboutMe" exact element={<About />}></Route>
+          <Route path="/ContactMe" exact element={<Contactame />}></Route>
+          <Route path="/Portfolio" exact element={<Portafolio />}></Route>
           <Route component={Error404} />
-        </Switch>
+        </Routes>
       </AnimatePresence>
       <Footer />
     </div>

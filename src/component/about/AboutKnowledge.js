@@ -1,5 +1,5 @@
 import React from "react";
-import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import { useTranslation } from "react-i18next";
 
 const AboutKnowledge = () => {
@@ -17,7 +17,7 @@ const AboutKnowledge = () => {
               "about.certificate.title"
             )}`}
           >
-            <PictureAsPdfIcon
+            <CloudDownloadIcon
               style={{ fontSize: "3rem", display: "block", margin: "0 auto" }}
             />
             <strong>{value.name}</strong>
