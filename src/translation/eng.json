@@ -157,6 +157,7 @@
   "portfolio": {
     "title": "Portfolio",
     "git-title": "Github of the {{title}} project",
+    "without-git": "This project is private",
     "tab-description": "Description",
     "tab-technology": "Technology",
     "tab-technology-p": "The technologies used in this project were:",
@@ -165,6 +166,73 @@
     "carrousel-next": "Next",
     "carrousel-back": "Back",
     "data": [
+      {
+        "title": "Rapidito Yaa!",
+        "img": {
+          "quantity": 8,
+          "url": [
+            "Ry1.jpg",
+            "Ry2.jpg",
+            "Ry3.jpg",
+            "Ry4.jpg",
+            "Ry5.jpg",
+            "Ry6.jpg",
+            "Ry7.jpg",
+            "Ry8.jpg"
+          ]
+        },
+        "description": "The start of this project was by a client who had in mind to create an app in the style of 'Uber', which would work hand in hand with the google maps API in real time, for the FrontEnd part, use React Native technology for the app and Reactjs for the web page which includes an administrator panel, in turn it is connected with the power of Firebase in Backend. As a result, this peculiar app was quite intuitive, functional and fast despite the use of the different Google APIs.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Sass",
+          "Javascript",
+          "React",
+          "Firebase"
+        ],
+        "objectives": [
+          "Create an administration panel that works in real time with the App",
+          "Provide a seamless user experience",
+          "Have the possibility to leave comments and reviews to the drivers",
+          "Learn more about React Native and Google APIs",
+          "Create an interconnected data structure with a non-relational database",
+          "A functional app on both Android and iPhone"
+        ]
+      },
+      {
+        "title": "Beat Place",
+        "img": {
+          "quantity": 11,
+          "url": [
+            "Bp1.jpg",
+            "Bp2.jpg",
+            "Bp3.jpg",
+            "Bp4.jpg",
+            "Bp5.jpg",
+            "Bp6.jpg",
+            "Bp7.jpg",
+            "Bp8.jpg",
+            "Bp9.jpg",
+            "Bp10.jpg",
+            "Bp11.jpg"
+          ]
+        },
+        "description": "The idea of this project was born thanks to my passion for music, the idea was to create an App with React Native, where beats can be uploaded and listened to locally, hand in hand with ExpressJs in Backend to create a fairly complete Creation API. user, editing, beat creation, beat editing, the option of being a user or a beatmaker and of course a search engine. Following the respective security patterns such as jwt and authentication.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Javascript",
+          "React",
+          "nodejs",
+          "Expressjs"
+        ],
+        "objectives": [
+          "Create an API with strong security integration",
+          "Strengthen knowledge in React Native",
+          "Learn much more about how Axios works",
+          "Learn different ways to connect the Backend with the FrontEnd natively"
+        ]
+      },
       {
         "title": "Urban Style",
         "url": {
@@ -250,41 +318,6 @@
           "Fully understand asynchronous functions in javascript",
           "A Lazyload of all the information based on the scroll",
           "Make a filter that handles several options without any collision"
-        ]
-      },
-      {
-        "title": "Caroline Spa",
-        "url": {
-          "git": "https://github.com/EstefanoC/Caroline-Spa",
-          "web": "https://caroline-spa.herokuapp.com/index.php"
-        },
-        "img": {
-          "quantity": 8,
-          "url": [
-            "Cs1.jpg",
-            "Cs2.jpg",
-            "Cs3.jpg",
-            "Cs4.jpg",
-            "Cs5.jpg",
-            "Cs6.jpg",
-            "Cs7.jpg",
-            "Cs8.jpg"
-          ]
-        },
-        "description": "CarolineSpa is a project intended for a general learning of how Apache, Php and MySQL databases work. Resulting in a page with the possibility of a theme that can be exported to Wordpress, thus being a functional page.",
-        "tecnology": [
-          "Html 5",
-          "Css 3",
-          "Bootstrap",
-          "Font Awesome",
-          "Javascript",
-          "WampServer",
-          "Php"
-        ],
-        "objectives": [
-          "Learn how Php works",
-          "Understand Apache integration",
-          "Know how the integration of MySQL in a web page works"
         ]
       },
       {

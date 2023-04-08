@@ -157,6 +157,7 @@
   "portfolio": {
     "title": "Portafolio",
     "git-title": "Github del proyecto {{title}}",
+    "without-git": "Este Proyecto es privado",
     "tab-description": "Descripción",
     "tab-technology": "Tecnologías",
     "tab-technology-p": "Las tecnologías usadas en este proyecto fueron:",
@@ -165,6 +166,73 @@
     "carrousel-next": "Siguiente",
     "carrousel-back": "Atras",
     "data": [
+      {
+        "title": "Rapidito Yaa!",
+        "img": {
+          "quantity": 8,
+          "url": [
+            "Ry1.jpg",
+            "Ry2.jpg",
+            "Ry3.jpg",
+            "Ry4.jpg",
+            "Ry5.jpg",
+            "Ry6.jpg",
+            "Ry7.jpg",
+            "Ry8.jpg"
+          ]
+        },
+        "description": "El inicio de este proyecto fué por un cliente que tenia en mente crear una app al estilo de 'Uber', que funcionara de mano con la API de google maps en tiempo real, por la parte del FrontEnd use la tecnología de React Native para la app y Reactjs para la página web la cual incluye un panel de administrador, a su vez la misma esta conectada con el poder de Firebase en Backend.  Como resultado dió esta peculiar app bastante intuitiva, funcional y veloz a pesar del uso de las distintas API de google.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Sass",
+          "Javascript",
+          "React",
+          "Firebase"
+        ],
+        "objectives": [
+          "Crear un panel de administración que funcione en tiempo real con la App",
+          "Ofrecer una experiencia fluida al usuario",
+          "Tener la posibilidad de dejar comentarios y reviews a los conductores",
+          "Conocer más sobre React Native y las API de Google",
+          "Crear una estructura de datos interconectados con una base de datos no relacional",
+          "Una app funcional tanto en Android como en Iphone"
+        ]
+      },
+      {
+        "title": "Beat Place",
+        "img": {
+          "quantity": 11,
+          "url": [
+            "Bp1.jpg",
+            "Bp2.jpg",
+            "Bp3.jpg",
+            "Bp4.jpg",
+            "Bp5.jpg",
+            "Bp6.jpg",
+            "Bp7.jpg",
+            "Bp8.jpg",
+            "Bp9.jpg",
+            "Bp10.jpg",
+            "Bp11.jpg"
+          ]
+        },
+        "description": "La idea de este proyecto nacio gracias a mi pasión con la música, la idea fué crear un App con React Native, en donde de manera local se puedan subir y escuchar beats (músicas), de mano con ExpressJs en Backend para crear una API bastante completa de Creación de usuario, edición, creación de beat, edición de beat, la opción de poder ser un usuario o un beatmaker (Un usuario destinado a subir beats) y por supuesto un buscador.   Siguiendo los respectivos patrones de seguiridad como el jwt y autenticación.",
+        "tecnology": [
+          "Html 5",
+          "Css 3",
+          "Javascript",
+          "React",
+          "nodejs",
+          "Expressjs"
+        ],
+        "objectives": [
+          "Crear una API con una integración solida en seguridad",
+          "Fortalecer el conocimiento en React Native",
+          "Aprender mucho más sobre como funciona Axios",
+          "Conocer distintas formas de conectar el Backend con el FrontEnd de manera nativa"
+        ]
+      },
       {
         "title": "Urban Style",
         "url": {
@@ -250,41 +318,6 @@
           "Entender a fondo las funciones asíncronas en javascript",
           "Un Lazyload de toda lainformación basado en el scroll",
           "Realizar un filtro que maneje varias opciones sin colisión alguna"
-        ]
-      },
-      {
-        "title": "Caroline Spa",
-        "url": {
-          "git": "https://github.com/EstefanoC/Caroline-Spa",
-          "web": "https://caroline-spa.herokuapp.com/index.php"
-        },
-        "img": {
-          "quantity": 8,
-          "url": [
-            "Cs1.jpg",
-            "Cs2.jpg",
-            "Cs3.jpg",
-            "Cs4.jpg",
-            "Cs5.jpg",
-            "Cs6.jpg",
-            "Cs7.jpg",
-            "Cs8.jpg"
-          ]
-        },
-        "description": "CarolineSpa es un proyecto destinado a un aprendizaje general de como funciona Apache, Php y MySQL database.  Teniendo como resultado una página con posibilidad a un tema que puede ser exportado a Wordpress, siendo así una página funcional.",
-        "tecnology": [
-          "Html 5",
-          "Css 3",
-          "Bootstrap",
-          "Font Awesome",
-          "Javascript",
-          "WampServer",
-          "Php"
-        ],
-        "objectives": [
-          "Aprender como funciona Php",
-          "Entender la integración de Apache",
-          "Saber como funciona la integración del MySQL en una página web"
         ]
       },
       {

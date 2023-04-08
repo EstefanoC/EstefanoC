@@ -11,6 +11,14 @@ const IndexPortfolio = () => {
   const [t, i18n] = useTranslation("global");
   const [linkStatus, setLinkStatus] = useState([
     {
+      name: "RapiditoYa",
+      link: "link1",
+    },
+    {
+      name: "Beat PLace",
+      link: "link1",
+    },
+    {
       name: "Urban Style",
       link: "link1",
     },
@@ -20,10 +28,6 @@ const IndexPortfolio = () => {
     },
     {
       name: "Breaking Bad",
-      link: "link1",
-    },
-    {
-      name: "Caroline Spa",
       link: "link1",
     },
     {
@@ -50,27 +54,36 @@ const IndexPortfolio = () => {
         <Row>
           <Col xs={12}>
             {t("portfolio.data", { returnObjects: true }).map(
-              (value, index) => (
+              (
+                { title, url, img, description, tecnology, objectives },
+                index
+              ) => (
                 <article className="portfolioCard p-2 mb-5" key={index}>
                   <header className="cardHeader text-center py-2">
                     <h1 className="mb-0 text-uppercase shadown-text">
-                      {value.title}
+                      {title}
                     </h1>
-                    <a
-                      href={value.url.git}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mr-3"
-                      title={t("portfolio.git-title", {
-                        returnObjects: true,
-                        title: value.title,
-                      })}
-                    >
-                      <GitHubIcon style={{ fontSize: "2rem" }} />
-                    </a>
+
+                    {/* Hidden if this project don't have url */}
+                    {url?.git ? (
+                      <a
+                        href={url.git}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-3"
+                        title={t("portfolio.git-title", {
+                          returnObjects: true,
+                          title: title,
+                        })}
+                      >
+                        <GitHubIcon style={{ fontSize: "2rem" }} />
+                      </a>
+                    ) : (
+                      <p>{t("portfolio.without-git")}</p>
+                    )}
                   </header>
                   <div className="cardImg">
-                    <Carousel img={value.img} title={value.title} />
+                    <Carousel img={img} title={title} />
                   </div>
                   <div className="cardText">
                     <Tab.Container
@@ -83,27 +96,21 @@ const IndexPortfolio = () => {
                             <ListGroup.Item
                               action
                               eventKey="#link1"
-                              onClick={() =>
-                                handleClickLink(`link1`, value.title)
-                              }
+                              onClick={() => handleClickLink(`link1`, title)}
                             >
                               <h2>{t("portfolio.tab-description")}</h2>
                             </ListGroup.Item>
                             <ListGroup.Item
                               action
                               eventKey="#link2"
-                              onClick={() =>
-                                handleClickLink(`link2`, value.title)
-                              }
+                              onClick={() => handleClickLink(`link2`, title)}
                             >
                               <h2>{t("portfolio.tab-technology")}</h2>
                             </ListGroup.Item>
                             <ListGroup.Item
                               action
                               eventKey="#link3"
-                              onClick={() =>
-                                handleClickLink(`link3`, value.title)
-                              }
+                              onClick={() => handleClickLink(`link3`, title)}
                             >
                               <h2>{t("portfolio.tab-objectives")}</h2>
                             </ListGroup.Item>
@@ -112,7 +119,7 @@ const IndexPortfolio = () => {
                         <Col xl={8} className="h-100">
                           <Tab.Content
                             className={`h-100 d-flex justify-content-center align-items-start t-b ${
-                              linkStatus[index].name === value.title
+                              linkStatus[index].name === title
                                 ? linkStatus[index].link
                                 : "Link1"
                             }`}
@@ -121,30 +128,32 @@ const IndexPortfolio = () => {
                               eventKey="#link1"
                               className="tabDes h-100"
                             >
-                              <p className="mb-0 d-block">
-                                {value.description}
-                              </p>
-                              <a
-                                href={value.url.web}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Button size="lg" block>
-                                  {t("portfolio.button-project")}
-                                </Button>
-                              </a>
+                              <p className="mb-0 d-block">{description}</p>
+
+                              {/* Hidden if this project don't have url */}
+                              {url?.web && (
+                                <a
+                                  href={url.web}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <Button size="lg" block>
+                                    {t("portfolio.button-project")}
+                                  </Button>
+                                </a>
+                              )}
                             </Tab.Pane>
                             <Tab.Pane
                               eventKey="#link2"
                               className="tabTec h-100 w-100 pb-2"
                             >
-                              <TabTecnology items={value.tecnology} />
+                              <TabTecnology items={tecnology} />
                             </Tab.Pane>
                             <Tab.Pane
                               eventKey="#link3"
                               className="tabObj w-100"
                             >
-                              <TabObjective objectives={value.objectives} />
+                              <TabObjective objectives={objectives} />
                             </Tab.Pane>
                           </Tab.Content>
                         </Col>
