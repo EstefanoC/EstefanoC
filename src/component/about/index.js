@@ -29,7 +29,7 @@ const IndexAbout = () => {
     <section className="firstSection mb-5">
       <Container>
         <Row>
-          <Col md={6} className="tab align-items-center">
+          <Col md={8} sm={12} className="tab align-items-center">
             <Tabs defaultActiveKey="autobiography" id="tab" className="pt-3">
               <Tab
                 eventKey="autobiography"
@@ -76,12 +76,12 @@ const IndexAbout = () => {
               </Tab>
             </Tabs>
           </Col>
-          <Col md={12} lg={{ span: 3 }} className="p-0">
+          <Col md={12} lg={{ span: 2 }} className="p-0">
             <h1 className="text-sm-left mb-4 mb-lg-0 shadown-text">
               <span>Mid</span> <span>Web</span> <span>Developer</span>
             </h1>
           </Col>
-          <Col md={12} lg={3} className="portrait text-center text-lg-left p-0">
+          <Col md={12} lg={2} className="portrait text-center text-lg-left p-0">
             <div>
               <img
                 src={Portrait}

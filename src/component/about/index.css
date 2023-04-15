@@ -17,10 +17,8 @@
 }
 .about .firstSection .portrait img {
   box-shadow: 0 0 4px -1px #ffd390c2;
-  max-width: 80%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  max-width: 100%;
+  transform: translateY(-50%);
   transition: ease all 0.5s;
 }
 @media (max-width: 991px) {
@@ -31,29 +29,12 @@
   .about .firstSection h1 span {
     display: inline-block;
   }
-  .about .firstSection .portrait img {
-    position: static;
+  .about .firstSection .portrait {
+    height: auto !important;
+    transform: translateY(0);
   }
-}
-@media (min-width: 1500px) {
   .about .firstSection .portrait img {
-    max-width: 60%;
-    position: absolute;
-    bottom: 0;
-  }
-}
-@media (min-width: 2000px) {
-  .about .firstSection .portrait img {
-    max-width: 40%;
-    position: absolute;
-    bottom: 0;
-  }
-}
-@media (min-width: 3000px) {
-  .about .firstSection .portrait img {
-    max-width: 30%;
-    position: absolute;
-    bottom: 0;
+    transform: translateY(0);
   }
 }
 .about .firstSection .tab {
@@ -147,6 +128,7 @@
 @media (max-width: 991px) {
   .about .firstSection .tab {
     order: 1;
+    width: 100%;
   }
   .about .firstSection .tab .tabCo .icon1 li:hover > a strong,
   .about .firstSection .tab .tabCo .icon2 li:hover > a strong,
