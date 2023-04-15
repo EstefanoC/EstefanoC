@@ -66,8 +66,8 @@
     "autobiography": {
       "title": "Autobiography",
       "name": "My name is Estefano Chacón, I am",
-      "strong": "web developer front-end junior",
-      "p": "and I am 21 years old, for a couple of years I have fallen in love with programming and especially web development.",
+      "strong": "Web Developer Front-end Mid",
+      "p": "and I am {{age}} years old, for years now I fell in love with programming and especially web development, although lately I have learned what is necessary to develop apps for phones. For the simple reason that I consider myself a person who likes logic and solving problems, I would love to dedicate my whole life to this profession, always updating myself according to technology and its trends.",
       "cv-pdf": "cv_en.pdf"
     },
     "knowledge": {
@@ -149,6 +149,34 @@
           "id": 14,
           "name": "Backend Nodejs",
           "url": "/backend-nodejs.pdf"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "p1": "I will show some pages in which I have worked as proof of my experience:",
+      "p2": "I am not responsible for any major change in these pages or change of hosting, so I will leave a representative image.",
+      "data": [
+        {
+          "id": 1,
+          "title": "Packachange",
+          "description": "In this project I am currently in charge of the FrontEnd",
+          "image": "Pck.jpg",
+          "url": "https://packachange.com/"
+        },
+        {
+          "id": 2,
+          "title": "Celta",
+          "description": "In this project made in Wordpress I have worked on the logic of its payment form and many other functions, in addition to improving and fixing style errors.",
+          "image": "Cl.jpg",
+          "url": "https://celta.cl/"
+        },
+        {
+          "id": 3,
+          "title": "Veronica Propiedades",
+          "description": "This project made in Wordpress I have worked on the logic of the conversion of live prices from Chilean pesos to dollars and other necessary style changes",
+          "image": "Vp.jpg",
+          "url": "https://veronicapropiedades.com/"
         }
       ]
     },

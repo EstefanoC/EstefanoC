@@ -1,21 +1,29 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+// Dependencies
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col, Tab, ListGroup, Button } from "react-bootstrap";
+
+// Components
 import Carousel from "./carousel";
 import TabTecnology from "./tabTecnology";
 import TabObjective from "./tabObjective";
+
+// Icon
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { useTranslation } from "react-i18next";
+
+// Style
 import "./index.css";
 
 const IndexPortfolio = () => {
   const [t, i18n] = useTranslation("global");
   const [linkStatus, setLinkStatus] = useState([
     {
-      name: "RapiditoYa",
+      name: "Rapidito Yaa!",
       link: "link1",
     },
     {
-      name: "Beat PLace",
+      name: "Beat Place",
       link: "link1",
     },
     {
@@ -41,6 +49,13 @@ const IndexPortfolio = () => {
   ]);
 
   const handleClickLink = (links, title) => {
+    console.log(
+      linkStatus.map((item) =>
+        item.name === title ? { ...item, link: links } : item
+      ),
+      links,
+      name
+    );
     setLinkStatus(
       linkStatus.map((item) =>
         item.name === title ? { ...item, link: links } : item
@@ -121,7 +136,7 @@ const IndexPortfolio = () => {
                             className={`h-100 d-flex justify-content-center align-items-start t-b ${
                               linkStatus[index].name === title
                                 ? linkStatus[index].link
-                                : "Link1"
+                                : "link1"
                             }`}
                           >
                             <Tab.Pane
@@ -137,7 +152,7 @@ const IndexPortfolio = () => {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
-                                  <Button size="lg" block>
+                                  <Button size="lg" block={"true"}>
                                     {t("portfolio.button-project")}
                                   </Button>
                                 </a>

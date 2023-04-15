@@ -21,7 +21,7 @@ const Home = () => {
     <Container fluid className="home p-0 m-0">
       <nav className="home-nav">
         <ul className="p-0 m-0">
-          <Row noGutters>
+          <Row fluid={"true"}>
             <Col xs={12} className={animateFinishTop}>
               <NavTop />
             </Col>

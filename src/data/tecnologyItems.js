@@ -40,6 +40,16 @@ export const Icon1 = [
     img: "nodejs.png",
   },
   {
+    title: "Expressjs",
+    url: "https://expressjs.com/",
+    img: "expressjs.png",
+  },
+  {
+    title: "Mongodb",
+    url: "https://www.mongodb.com/",
+    img: "mongodb.png",
+  },
+  {
     title: "mysql",
     url: "https://www.mysql.com/",
     img: "mysql.png",
@@ -96,19 +106,14 @@ export const Icon3 = [
     img: "php.svg",
   },
   {
+    title: "Wordpress",
+    url: "https://wordpress.com",
+    img: "wordpress.png",
+  },
+  {
     title: "WampServer",
     url: "https://www.wampserver.com",
     img: "WampServer.png",
-  },
-  {
-    title: "Expressjs",
-    url: "https://expressjs.com/",
-    img: "expressjs.png",
-  },
-  {
-    title: "Mongodb",
-    url: "https://www.mongodb.com/",
-    img: "mongodb.png",
   },
   {
     title: "Webpack",

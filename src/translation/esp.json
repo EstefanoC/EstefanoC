@@ -66,8 +66,8 @@
     "autobiography": {
       "title": "Autobiografía",
       "name": "Mi nombre es Estefano Chacón, soy",
-      "strong": "web developer front-end junior",
-      "p": "y tengo 21 años, desde hace un par de años me he enamorado de la programación y en especial del desarrollo web.",
+      "strong": "Web Developer Front-end Mid",
+      "p": "y tengo {{age}} años, desde hace ya años me enamoré de la programación y en especial del desarrollo web aunque ultimamente he aprendido lo necesario para desarrolar app para teléfonos.  Por la simple razón que me considero una persona que le gusta la lógica y resolver problemas me encantaria dedicarle toda mi vida a esta profesión, siempre actualizandome conforme la tecnología y sus tendencias.",
       "cv-pdf": "cv_es.pdf"
     },
     "knowledge": {
@@ -149,6 +149,34 @@
           "id": 14,
           "name": "Backend Nodejs",
           "url": "/backend-nodejs.pdf"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "p1": "Mostrare algunas páginas en las que he trabajado como prueba de mi experiencia:",
+      "p2": "No me hago responsable de algún cambio importante en dichas páginas o cambio de hosting, por ello dejaré una imagen reprensentativa.",
+      "data": [
+        {
+          "id": 1,
+          "title": "Packachange",
+          "description": "En este proyecto actualmente estoy encargado del FrontEnd",
+          "image": "Pck.jpg",
+          "url": "https://packachange.com/"
+        },
+        {
+          "id": 2,
+          "title": "Celta",
+          "description": "En este proyecto hecho en Wordpress he trabajado en la lógica de su formulario de pago y otras tantas funciones, además de mejorar y arreglar errores de estilo",
+          "image": "Cl.jpg",
+          "url": "https://celta.cl/"
+        },
+        {
+          "id": 3,
+          "title": "Veronica Propiedades",
+          "description": "Este proyecto hecho en Wordpress he trabajado en la lógica de la conversión de precios en vivo de pesos chilenos a dólares y otros cambios necesarios de estilo",
+          "image": "Vp.jpg",
+          "url": "https://veronicapropiedades.com/"
         }
       ]
     },

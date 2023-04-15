@@ -2,16 +2,16 @@ body {
   margin: 0;
   /* background-color: var(--comple2);
   color: var(--comple1); */
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 :root {
-    --pri:#ffd390;
-    --sec: #4081B3;
-    --comple1: #1e1e1e;
-    --comple2: #f6f6f6;
+  --pri: #ffd390;
+  --sec: #4081b3;
+  --comple1: #1e1e1e;
+  --comple2: #f6f6f6;
 }
 .btn-primary {
   background-color: var(--pri);
@@ -23,12 +23,12 @@ body {
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: none;
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
 }
 .shadown-text {
   text-shadow: -1px 3px 10px #00000060;
-  transition: ease all .5s;
+  transition: ease all 0.5s;
 }
 .dark .shadown-text {
   text-shadow: -1px 3px 10px #ffffff60;
@@ -41,13 +41,14 @@ body {
 }
 .grid-main {
   display: grid;
-  grid-template: 'header'
-              'main'
-              'footer'/ 1fr;
+  grid-template:
+    "header"
+    "main" 1fr
+    "footer"/ 1fr;
   min-height: 100vh;
   background-color: var(--comple2);
   color: var(--comple1);
-  transition: ease all .5s;
+  transition: ease all 0.5s;
 }
 .grid-area-main {
   grid-area: main;

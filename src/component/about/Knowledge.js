@@ -1,12 +1,14 @@
-import React from "react";
-import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+// Dependencies
 import { useTranslation } from "react-i18next";
 
-const AboutKnowledge = () => {
+// Icon
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+
+const Knowledge = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <ul className="tabCer">
+    <ul className="tabCer p-3">
       {t("about.certificate.data", { returnObjects: true }).map((value) => (
         <li key={value.id} className="liCer" title={value.name}>
           <a
@@ -28,4 +30,4 @@ const AboutKnowledge = () => {
   );
 };
 
-export default AboutKnowledge;
+export default Knowledge;

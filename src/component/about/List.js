@@ -1,10 +1,10 @@
-import React from "react";
-import { Icon1, Icon2, Icon3 } from "../../data/tecnologyItems";
+// Dependencies
 import { useTranslation } from "react-i18next";
 
-let userImage;
+// Data
+import { Icon1, Icon2, Icon3 } from "../../data/tecnologyItems";
 
-const AboutList = () => {
+const List = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -60,4 +60,4 @@ const AboutList = () => {
   );
 };
 
-export default AboutList;
+export default List;
