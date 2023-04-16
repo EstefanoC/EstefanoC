@@ -198,6 +198,7 @@
         "title": "Rapidito Yaa!",
         "img": {
           "quantity": 8,
+          "mobile": 4,
           "url": [
             "Ry1.jpg",
             "Ry2.jpg",
@@ -231,6 +232,7 @@
         "title": "Beat Place",
         "img": {
           "quantity": 11,
+          "mobile": 11,
           "url": [
             "Bp1.jpg",
             "Bp2.jpg",
@@ -313,7 +315,7 @@
             "Gr6.JPG"
           ]
         },
-        "description": "Un single page application donde se encuentra una colección de 4 juegos, con su cambio de dificultad, manejo de tiempos y marcadores en general.  Un reto total en cuanto a la lógica que involucra hacer juegos interactivos solo con Javascript, ya que a su vez hay que crear CPU",
+        "description": "Un single page application donde se encuentra una colección de 4 juegos, con su cambio de dificultad, manejo de tiempos y marcadores en general.  Un reto total en cuanto a la lógica que involucra hacer juegos interactivos solo con Javascript, ya que a su vez hay que crear la inteligencia artifical de algunas CPU",
         "tecnology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
         "objectives": [
           "Manejo de los estados en la single page application",

@@ -98,7 +98,7 @@ const IndexPortfolio = () => {
                     )}
                   </header>
                   <div className="cardImg">
-                    <Carousel img={img} title={title} />
+                    <Carousel img={img} title={title} mobile={img.mobile} />
                   </div>
                   <div className="cardText">
                     <Tab.Container
@@ -152,7 +152,11 @@ const IndexPortfolio = () => {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
-                                  <Button size="lg" block={"true"}>
+                                  <Button
+                                    className="w-100"
+                                    size="lg"
+                                    block={"true"}
+                                  >
                                     {t("portfolio.button-project")}
                                   </Button>
                                 </a>

@@ -198,6 +198,7 @@
         "title": "Rapidito Yaa!",
         "img": {
           "quantity": 8,
+          "mobile": 4,
           "url": [
             "Ry1.jpg",
             "Ry2.jpg",
@@ -231,6 +232,7 @@
         "title": "Beat Place",
         "img": {
           "quantity": 11,
+          "mobile": 11,
           "url": [
             "Bp1.jpg",
             "Bp2.jpg",
@@ -313,7 +315,7 @@
             "Gr6.JPG"
           ]
         },
-        "description": "A one-page application where you will find a collection of 4 games, with their change of difficulty, time management and scores in general. A total challenge in terms of the logic involved in making interactive games only with Javascript, since you have to create CPU",
+        "description": "A one-page application where you will find a collection of 4 games, with their change of difficulty, time management and scores in general. A total challenge in terms of the logic involved in making interactive games only with Javascript, since you have to create the artificial intelligence of some CPU",
         "tecnology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
         "objectives": [
           "Handling the states in the single page application",
