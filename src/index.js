@@ -1,23 +1,21 @@
-import React from "react";
-import * as ReactDOMClient from "react-dom/client";
-import { HashRouter as Router } from "react-router-dom";
-import "./normalize.css";
-import App from "./component/app";
-import i18n from "./translation";
+// Dependencies
+import { render } from "react-dom";
 import { I18nextProvider } from "react-i18next";
+import { BrowserRouter } from "react-router-dom";
 
-function Main() {
-  // Callback will be called when the div is first created.
-  return (
-    <I18nextProvider i18n={i18n}>
-      <Router>
-        <App />
-      </Router>
-    </I18nextProvider>
-  );
-}
+// Components
+import i18n from "./translation";
+import App from "./component/app";
 
-const rootElement = document.getElementById("root");
+// Styles
+import "./normalize.css";
 
-const root = ReactDOMClient.createRoot(rootElement);
-root.render(<Main />);
+const Main = () => (
+  <I18nextProvider i18n={i18n}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </I18nextProvider>
+);
+
+render(<Main />, document.getElementById("root"));

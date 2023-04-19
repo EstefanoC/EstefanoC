@@ -117,11 +117,16 @@ export const HomeVariantBottom = {
     opacity: 1,
   },
   finish: {
-    y: "-60vh",
+    y: "-180vh",
+    scaleY: 6,
+    originY: 0,
     x: 0,
-    height: "140vh",
     opacity: 0,
     transition: {
+      scaleY: {
+        duration: 0.5,
+        ease: "linear",
+      },
       y: {
         duration: 0.5,
         ease: "linear",
