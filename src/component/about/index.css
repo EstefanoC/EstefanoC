@@ -18,7 +18,7 @@
 .about .firstSection .portrait img {
   box-shadow: 0 0 4px -1px #ffd390c2;
   max-width: 100%;
-  transform: translateY(-50%);
+  transform: translateY(-43%);
   transition: ease all 0.5s;
 }
 @media (max-width: 991px) {

@@ -353,11 +353,15 @@
 .Error404 {
   background-color: var(--pri);
 }
+.Error404 img {
+  max-width: 450px;
+  margin: 0 auto;
+}
 .Error404 .Link404 {
   text-align: center;
   text-decoration: none;
   color: var(--sec);
-  transition: ease-in-out .5s all;
+  transition: ease-in-out 0.5s all;
 }
 .Error404 .Link404:hover {
   text-decoration: none;

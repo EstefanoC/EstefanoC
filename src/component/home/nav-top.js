@@ -17,7 +17,7 @@ const NavTop = () => {
     setOpen(true);
 
     setTimeout(() => {
-      navigate("/AboutMe");
+      navigate("/About");
     }, 500);
   };
 

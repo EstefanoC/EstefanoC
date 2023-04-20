@@ -19,7 +19,7 @@ const NavBottom = (props) => {
     props.leaveCenter();
 
     setTimeout(() => {
-      navigate("/ContactMe");
+      navigate("/Contact");
     }, 500);
   };
 

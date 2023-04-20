@@ -49,13 +49,6 @@ const IndexPortfolio = () => {
   ]);
 
   const handleClickLink = (links, title) => {
-    console.log(
-      linkStatus.map((item) =>
-        item.name === title ? { ...item, link: links } : item
-      ),
-      links,
-      name
-    );
     setLinkStatus(
       linkStatus.map((item) =>
         item.name === title ? { ...item, link: links } : item

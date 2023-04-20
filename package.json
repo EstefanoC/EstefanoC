@@ -1,6 +1,7 @@
 {
-  "name": "estefano",
-  "version": "0.1.0",
+  "name": "EstefanoC",
+  "description": "EstefanoC Estefano Chacon Frontend developer Venezuela",
+  "version": "0.1.1",
   "private": true,
   "homepage": "http://EstefanoC.github.io/EstefanoC/",
   "dependencies": {
@@ -18,7 +19,6 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.9",
     "react-i18next": "^12.2.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",

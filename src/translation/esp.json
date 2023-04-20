@@ -36,7 +36,7 @@
     "nav-menu-li": [
       {
         "title": "Sobre mi",
-        "url": "/AboutMe",
+        "url": "/About",
         "cName": "nav-links"
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "title": "Contactame",
-        "url": "/ContactMe",
+        "url": "/Contact",
         "cName": "nav-links"
       }
     ],
@@ -388,22 +388,10 @@
   },
   "contact": {
     "title": "Contactáme",
-    "h1": "Enviame un correo llenando este sencillo formulario",
-    "p1": "O abre tú gestor de correo predeterminado presionando el ícono",
+    "h1": "Enviame un correo",
+    "p1": "Usualmente contesto en menos de 24 horas si se trata de días hábiles, no dudes en dejarme información para contactarte o tu inquietud en la que pueda ayudarte",
     "email-href": "mailto:estefano.jesus6@gmail.com?Subject=Quisiera%20contactarme%20contigo",
-    "email-title": "Abre tú gestor de correo",
-    "form-name-label": "Ingrese su nombre",
-    "form-name-placeholder": "Nombre",
-    "form-name-error": "Por favor, coloca tú nombre (Mínimo 3 caracteres)",
-    "form-email-label": "Ingrese su correo electrónico",
-    "form-email-placeholder": "Ejemplo: correo@correo.com",
-    "form-email-error": "Por favor, verifica que tú email sea correcto",
-    "form-message-label": "Ingrese su mensaje",
-    "form-message-placeholder": "Hola, ¿como te encuentras?.   Me gusta tú trabajo y quisiera contactarme contigo.",
-    "form-message-error": "Por favor, coloca mínimo 4 caracteres",
-    "form-button": "Enviar",
-    "form-success": "El mensaje me ha llegado con exito!, espera mi respuesta",
-    "form-error": "Ha ocurrido un error, vuelve a intentar por favor"
+    "email-title": "Presionando aqui o en el icono"
   },
   "error404": {
     "title": "No se ha encontrado la página",

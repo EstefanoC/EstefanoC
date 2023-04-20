@@ -1,5 +1,19 @@
+.contact h1 > a {
+  color: var(--sec);
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+.contact h1 > a > svg {
+  margin-left: 1rem;
+}
+.contact h1 > a:hover {
+  filter: brightness(0.8);
+}
 .contact .text-sec {
   font-size: 1.2rem;
+  max-width: 60%;
+  margin: 0 auto;
   color: var(--comple1);
   transition: ease all 0.5s;
 }
@@ -7,42 +21,9 @@
   color: #4081b3;
   text-decoration: none;
 }
-.contact .form-control {
-  color: var(--comple1);
-}
-.contact .form-group input ~ p,
-.contact .form-group textarea ~ p {
-  color: #dc3545 !important;
-}
-.contact form button {
-  background-color: #ffd39050;
-  font-size: 1.3rem;
-  border-radius: 0.25rem;
-  border-color: var(--pri);
-  color: var(--comple1);
-  box-shadow: 0 0 22px -16px var(--comple1);
-}
-.contact form .form-group + button[type="submit"]:hover,
-.contact form .form-group + button[type="submit"]:active,
-.contact form .form-group + button[type="submit"]:focus {
-  background-color: var(--pri);
-  color: var(--sec);
-  border-color: var(--comple1);
-  box-shadow: 0 0 37px -18px black, 0 0 45px -40px inset black !important;
-}
-.contact form button:hover svg {
-  color: var(--sec) !important;
-}
-.contact form .form-group .form-label::after {
-  content: ' *';
-  color: #dc3545;
-}
 
 /* Dark Mode */
 
 .dark .contact .text-sec {
   color: var(--comple2);
-}
-.dark .contact form button {
-  background-color: #ffdfaf;
 }
