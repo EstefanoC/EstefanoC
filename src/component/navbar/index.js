@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
+
+// Dependencies
+import { useTranslation } from "react-i18next";
 import { useLocation, Link } from "react-router-dom";
+
+// Image / Icon
+import Logo from "../../media/LogoEc.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
-import { useTranslation } from "react-i18next";
-import Logo from "../../media/LogoEc.svg";
-import "./index.css";
 
-let userImage;
+// Styles
+import "./index.css";
 
 const NavbarTop = ({ setDarkMode, darkMode }) => {
   const [path, setPath] = useState();
@@ -17,6 +21,7 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
 
   const usePageViews = () => {
     let location = useLocation();
+
     useEffect(() => {
       setPath(location.pathname);
     }, [location]);
@@ -71,7 +76,10 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
                 className={`${
                   code === i18n.language ? "active" : "deactivate"
                 }`}
-                onClick={() => i18n.changeLanguage(code)}
+                onClick={() => {
+                  i18n.changeLanguage(code);
+                  document.documentElement.lang = code;
+                }}
               >
                 <img
                   src={require(`../../media/lang_${code.toString()}.png`)}
