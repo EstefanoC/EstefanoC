@@ -6,8 +6,8 @@ import { Container, Row, Col, Tab, ListGroup, Button } from "react-bootstrap";
 
 // Components
 import Carousel from "./carousel";
-import Tabtechnology from "./tabtechnology";
 import TabObjective from "./tabObjective";
+import TabTechnology from "./tabTechnology";
 
 // Icon
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -159,7 +159,7 @@ const IndexPortfolio = () => {
                               eventKey="#link2"
                               className="tabTec h-100 w-100 pb-2"
                             >
-                              <Tabtechnology items={technology} />
+                              <TabTechnology items={technology} />
                             </Tab.Pane>
                             <Tab.Pane
                               eventKey="#link3"
