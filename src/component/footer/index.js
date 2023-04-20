@@ -40,7 +40,7 @@ const Footer = () => {
         <Row className="d-flex flex-column flex-md-row justify-content-between align-items-center">
           <Col xs={12} md={3}>
             <div className="footerBrand text-center">
-              <Link to="/">
+              <Link to="/EstefanoC">
                 <img src={Logo} alt="Logo" className="img-logo" />
               </Link>
             </div>

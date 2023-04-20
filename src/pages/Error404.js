@@ -18,7 +18,7 @@ const Error404 = () => {
           <h1 className="text-center text-uppercase d-block w-100 pt-5 t-b">
             {t("error404.title")}
           </h1>
-          <Link to="/" className="Link404 w-100 pb-5">
+          <Link to="/EstefanoC" className="Link404 w-100 pb-5">
             <h2>{t("error404.h2")}</h2>
           </Link>
           <img src={ErrorImg} className="img-fluid" />

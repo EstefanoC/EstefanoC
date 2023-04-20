@@ -19,7 +19,7 @@ const Portfolio = () => {
     <>
       <Helmet>
         <title>Estefano Chacon | EstefanoC</title>
-        <link rel="canonical" href="https://estefanoc.github.io/EstefanoC/" />
+        <link rel="canonical" href="https://estefanoc.github.io/EstefanoC" />
         <meta property="og:title" content="EstefanoC FrontEnd Developer" />
         <meta name="twitter:title" content="EstefanoC FrontEnd Developer" />
         <meta
@@ -40,22 +40,22 @@ const Portfolio = () => {
         />
         <meta
           property="og:url"
-          content="https://estefanoc.github.io/EstefanoC/"
+          content="technologyhttps://estefanoc.github.io/EstefanoC"
         />
         <meta
           name="twitter:url"
-          content="https://estefanoc.github.io/EstefanoC/"
+          content="technologyhttps://estefanoc.github.io/EstefanoC"
         />
         <meta
           property="og:image"
           itemprop="image"
-          content="https://estefanoc.github.io/EstefanoC/logo512.png"
+          content="technologyhttps://estefanoc.github.io/logo512.png"
         />
         <meta property="og:type" content="website" />
         <link
           rel="apple-touch-icon"
           sizes="60x60"
-          href="https://estefanoc.github.io/EstefanoC/logo60.png"
+          href="technologyhttps://estefanoc.github.io/logo60.png"
         />
         <meta name="robots" content="index,nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

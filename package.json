@@ -3,7 +3,7 @@
   "description": "EstefanoC Estefano Chacon Frontend Developer Venezuela",
   "version": "0.1.1",
   "private": true,
-  "homepage": "http://EstefanoC.github.io/EstefanoC/",
+  "homepage": "http://EstefanoC.github.io/EstefanoC",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

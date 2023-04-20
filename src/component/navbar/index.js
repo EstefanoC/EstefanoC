@@ -36,7 +36,7 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
   return (
     <nav className="navbar">
       <div className="navbarBrand">
-        <Link to="/">
+        <Link to="/EstefanoC">
           <img src={Logo} alt="Logo" className="img-logo" />
         </Link>
       </div>
