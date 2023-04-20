@@ -1,10 +1,10 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
-import TypedReact from "../helpers/typed";
+// Dependencies
 import { useTranslation } from "react-i18next";
 
-const NavTop = (props) => {
+// Helpers
+import TypedReact from "../helpers/typed";
+
+const NavTop = ({ stop, start, WithoutStop }) => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -67,9 +67,9 @@ const NavTop = (props) => {
               backSpeed={50}
               backDelay={10000}
               cursor="|"
-              stop={props.stop}
-              start={props.start}
-              WithoutStop={props.WithoutStop}
+              stop={stop}
+              start={start}
+              WithoutStop={WithoutStop}
             />
             <span className="blue2">{"</p>"}</span>
           </div>

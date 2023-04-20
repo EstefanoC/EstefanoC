@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 // Components
 import List from "./List";
 import Knowledge from "./Knowledge";
+import Experience from "./Experience";
 
 // Image / Icon
 import Portrait from "../../media/portrait.jpg";
@@ -13,7 +14,6 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import "./index.css";
 import { Button } from "react-bootstrap";
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
-import Experience from "./Experience";
 
 const IndexAbout = () => {
   const [t, i18n] = useTranslation("global");

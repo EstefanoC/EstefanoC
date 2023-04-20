@@ -1,22 +1,31 @@
-import React, { useState } from "react";
-import BgNavBottom from "./bg-navbottom";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+// Dependencies
 import { motion } from "framer-motion";
-import { HomeVariantBottom } from "../helpers/animation";
-import { Container, Button } from "react-bootstrap/";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const NavBottom = (props) => {
+// Helpers
+import { HomeVariantBottom } from "../helpers/animation";
+
+// Components
+import BgNavBottom from "./bg-navbottom";
+
+// Styles
+import { Container, Button } from "react-bootstrap/";
+
+const NavBottom = ({ leaveTop, leaveCenter }) => {
   const [stop, setStop] = useState(null);
   const [start, setStart] = useState(null);
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
   const [t, i18n] = useTranslation("global");
+
+  const navigate = useNavigate();
 
   const handleOnClick = () => {
     setOpen(true);
-    props.leaveTop();
-    props.leaveCenter();
+    leaveTop();
+    leaveCenter();
 
     setTimeout(() => {
       navigate("/Contact");

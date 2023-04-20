@@ -6,7 +6,7 @@ import { Container, Row, Col, Tab, ListGroup, Button } from "react-bootstrap";
 
 // Components
 import Carousel from "./carousel";
-import TabTecnology from "./tabTecnology";
+import Tabtechnology from "./tabtechnology";
 import TabObjective from "./tabObjective";
 
 // Icon
@@ -63,7 +63,7 @@ const IndexPortfolio = () => {
           <Col xs={12}>
             {t("portfolio.data", { returnObjects: true }).map(
               (
-                { title, url, img, description, tecnology, objectives },
+                { title, url, img, description, technology, objectives },
                 index
               ) => (
                 <article className="portfolioCard p-2 mb-5" key={index}>
@@ -159,7 +159,7 @@ const IndexPortfolio = () => {
                               eventKey="#link2"
                               className="tabTec h-100 w-100 pb-2"
                             >
-                              <TabTecnology items={tecnology} />
+                              <Tabtechnology items={technology} />
                             </Tab.Pane>
                             <Tab.Pane
                               eventKey="#link3"

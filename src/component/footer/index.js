@@ -1,14 +1,20 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { useState, useEffect } from "react";
+
+// Dependencies
+import { useTranslation } from "react-i18next";
 import { useLocation, Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
-import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
-import CopyrightIcon from "@mui/icons-material/Copyright";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
+// Images / Icons
 import Logo from "../../media/LogoEc.svg";
-import { useTranslation } from "react-i18next";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import CopyrightIcon from "@mui/icons-material/Copyright";
+import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
+
+// Styles
 import "./index.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   const [path, setPath] = useState();
@@ -20,7 +26,8 @@ const Footer = () => {
 
   const usePageViews = () => {
     let location = useLocation();
-    React.useEffect(() => {
+
+    useEffect(() => {
       setPath(location.pathname);
     }, [location]);
   };
@@ -41,16 +48,14 @@ const Footer = () => {
           <Col xs={12} md={4}>
             <ul className="footer-menu p-0 text-center mt-4 mt-md-0">
               {t("navbar.nav-menu-li", { returnObjects: true }).map(
-                (item, index) => {
+                ({ url, cName, title }, index) => {
                   return (
                     <li key={index} className="py-2">
                       <Link
-                        className={`${path === item.url ? "active" : ""} ${
-                          item.cName
-                        }`}
-                        to={item.url}
+                        className={`${path === url ? "active" : ""} ${cName}`}
+                        to={url}
                       >
-                        {item.title}
+                        {title}
                       </Link>
                     </li>
                   );

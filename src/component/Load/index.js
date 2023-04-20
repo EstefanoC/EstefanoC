@@ -1,11 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+// Dependencies
 import { motion } from "framer-motion";
+
+// Helpers
 import {
   SvgVariantLogo,
   PathVariantLogo,
   SvgVariantText,
 } from "../helpers/animation";
 
+// Styles
 import "./index.css";
 
 const Load = () => {

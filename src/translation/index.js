@@ -1,5 +1,8 @@
+// Dependencies
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+
+// Lang
 import esp from "./esp.json";
 import eng from "./eng.json";
 

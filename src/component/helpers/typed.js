@@ -1,6 +1,9 @@
-/* eslint-disable react/prop-types */
-import React, { Component } from "react";
+import { Component } from "react";
+
+// Dependencies
 import Typed from "react-typed";
+
+// Styles
 import "react-typed/dist/animatedCursor.css";
 
 class TypedReact extends Component {

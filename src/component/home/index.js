@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+// Components
 import NavTop from "./nav-top";
-import NavCenter from "./nav-center";
 import NavBottom from "./nav-bottom";
-import { Container, Row, Col } from "react-bootstrap/";
+import NavCenter from "./nav-center";
+
+// Styles
 import "./index.css";
+import { Container, Row, Col } from "react-bootstrap/";
 
 const Home = () => {
   const [animateFinishTop, setAnimateFinishTop] = useState("");

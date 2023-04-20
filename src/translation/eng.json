@@ -211,7 +211,7 @@
           ]
         },
         "description": "The start of this project was by a client who had in mind to create an app in the style of 'Uber', which would work hand in hand with the google maps API in real time, for the FrontEnd part, use React Native technology for the app and Reactjs for the web page which includes an administrator panel, in turn it is connected with the power of Firebase in Backend. As a result, this peculiar app was quite intuitive, functional and fast despite the use of the different Google APIs.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Sass",
@@ -248,7 +248,7 @@
           ]
         },
         "description": "The idea of this project was born thanks to my passion for music, the idea was to create an App with React Native, where beats can be uploaded and listened to locally, hand in hand with ExpressJs in Backend to create a fairly complete Creation API. user, editing, beat creation, beat editing, the option of being a user or a beatmaker and of course a search engine. Following the respective security patterns such as jwt and authentication.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Javascript",
@@ -282,7 +282,7 @@
           ]
         },
         "description": "In this project I proposed to make a page from scratch that has functionality and works with a database in a fluid way, maintaining the theme of urban clothing, having as a general basis the technology of React and taking advantage of all the tools that it offers, such as its dependencies and integration with the DOM.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Bootstrap",
@@ -316,7 +316,7 @@
           ]
         },
         "description": "A one-page application where you will find a collection of 4 games, with their change of difficulty, time management and scores in general. A total challenge in terms of the logic involved in making interactive games only with Javascript, since you have to create the artificial intelligence of some CPU",
-        "tecnology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
+        "technology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
         "objectives": [
           "Handling the states in the single page application",
           "Creating an AI to make competitive games",
@@ -335,7 +335,7 @@
           "url": ["Bb1.JPG", "Bb2.JPG", "Bb3.JPG", "Bb4.JPG", "Bb5.JPG"]
         },
         "description": "A simple project designed to capture what has been learned about API calls, callbacks and handling of requests and information in an asynchronous way, with an integration at the same time of a filter of all the information returned accompanied by a subtle style that matches to the initial theme.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Sass",
@@ -361,7 +361,7 @@
           "url": ["Ab1.jpg", "Ab2.jpg", "Ab3.jpg"]
         },
         "description": "Rural architecture is the basis of this static page design made with the aim of continuing to master the tools that bootstrap offers.",
-        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "technology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
         "objectives": ["Fully master Bootstrap 5", "Make a minimalist design"]
       },
       {
@@ -375,7 +375,7 @@
           "url": ["Rgdl1.jpg", "Rgdl2.jpg", "Rgdl3.jpg", "Rgdl4.jpg"]
         },
         "description": "Design created only with Html and Css, maintaining the best possible use of semantics and at the same time wanting to convey luxury in the general design of the web page.",
-        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "technology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
         "objectives": [
           "Fully master Bootstrap 5",
           "Get the best possible semantics offered by Html 5"

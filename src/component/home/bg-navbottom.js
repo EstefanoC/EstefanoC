@@ -1,9 +1,10 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import TypedReact from "../helpers/typed";
+// Dependencies
 import { useTranslation } from "react-i18next";
 
-const NavBottom = (props) => {
+// Helpers
+import TypedReact from "../helpers/typed";
+
+const NavBottom = ({ stop, start, WithoutStop }) => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -17,9 +18,9 @@ const NavBottom = (props) => {
           backSpeed={90}
           backDelay={1000}
           cursor=" "
-          stop={props.stop}
-          start={props.start}
-          WithoutStop={props.WithoutStop}
+          stop={stop}
+          start={start}
+          WithoutStop={WithoutStop}
         />
       </div>
     </>

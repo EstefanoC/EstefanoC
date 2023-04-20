@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // Dependencies
 import { useTranslation } from "react-i18next";
@@ -41,17 +41,19 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
         </Link>
       </div>
       <ul className={click ? "nav-menu active p-0" : "nav-menu p-0"}>
-        {t("navbar.nav-menu-li", { returnObjects: true }).map((item, index) => (
-          <li key={index}>
-            <Link
-              className={`${path === item.url ? "active" : ""} ${item.cName}`}
-              to={item.url}
-              onClick={handleClick}
-            >
-              {item.title}
-            </Link>
-          </li>
-        ))}
+        {t("navbar.nav-menu-li", { returnObjects: true }).map(
+          ({ url, cName, title }, index) => (
+            <li key={index}>
+              <Link
+                className={`${path === url ? "active" : ""} ${cName}`}
+                to={url}
+                onClick={handleClick}
+              >
+                {title}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
       <div className={`switch-container ${darkMode ? "active" : ""}`}>
         <button className="switch" id="switch" onClick={() => setDarkMode()}>

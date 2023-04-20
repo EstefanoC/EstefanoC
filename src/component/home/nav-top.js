@@ -1,10 +1,18 @@
-import React, { useState } from "react";
-import BgNavTop from "./bg-navtop";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+// Dependencies
 import { motion } from "framer-motion";
-import { HomeVariantTop } from "../helpers/animation";
-import { Container, Button } from "react-bootstrap/";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+
+// Helpers
+import { HomeVariantTop } from "../helpers/animation";
+
+// Components
+import BgNavTop from "./bg-navtop";
+
+// Styles
+import { Container, Button } from "react-bootstrap/";
 
 const NavTop = () => {
   const [stop, setStop] = useState(null);

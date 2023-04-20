@@ -211,7 +211,7 @@
           ]
         },
         "description": "El inicio de este proyecto fué por un cliente que tenia en mente crear una app al estilo de 'Uber', que funcionara de mano con la API de google maps en tiempo real, por la parte del FrontEnd use la tecnología de React Native para la app y Reactjs para la página web la cual incluye un panel de administrador, a su vez la misma esta conectada con el poder de Firebase en Backend.  Como resultado dió esta peculiar app bastante intuitiva, funcional y veloz a pesar del uso de las distintas API de google.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Sass",
@@ -248,7 +248,7 @@
           ]
         },
         "description": "La idea de este proyecto nacio gracias a mi pasión con la música, la idea fué crear un App con React Native, en donde de manera local se puedan subir y escuchar beats (músicas), de mano con ExpressJs en Backend para crear una API bastante completa de Creación de usuario, edición, creación de beat, edición de beat, la opción de poder ser un usuario o un beatmaker (Un usuario destinado a subir beats) y por supuesto un buscador.   Siguiendo los respectivos patrones de seguiridad como el jwt y autenticación.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Javascript",
@@ -282,7 +282,7 @@
           ]
         },
         "description": "En este proyecto me propuse realizar una página desde cero que tenga funcionalidad y trabaje con un data base de manera fluida manteniendo la temática de ropa urbana, teniendo como base general la tecnología de React y aprovechando todas las herramientas que la misma ofrece, como lo son sus dependencias e integración con el DOM.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Bootstrap",
@@ -316,7 +316,7 @@
           ]
         },
         "description": "Un single page application donde se encuentra una colección de 4 juegos, con su cambio de dificultad, manejo de tiempos y marcadores en general.  Un reto total en cuanto a la lógica que involucra hacer juegos interactivos solo con Javascript, ya que a su vez hay que crear la inteligencia artifical de algunas CPU",
-        "tecnology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
+        "technology": ["Html 5", "Css 3", "Javascript", "React", "Nextjs"],
         "objectives": [
           "Manejo de los estados en la single page application",
           "Creación de una IA para hacer juegos competitivos",
@@ -335,7 +335,7 @@
           "url": ["Bb1.JPG", "Bb2.JPG", "Bb3.JPG", "Bb4.JPG", "Bb5.JPG"]
         },
         "description": "Un simple proyecto destinado a plasmar lo aprendido acerca de las llamados a las API, callbacks y manejo de peticiones e información de manera asíncrona, con una integración a la vez de un filtro de toda la información devuelta acompañado con un sutil estilo que va a corde a la temática inicial.",
-        "tecnology": [
+        "technology": [
           "Html 5",
           "Css 3",
           "Sass",
@@ -361,7 +361,7 @@
           "url": ["Ab1.jpg", "Ab2.jpg", "Ab3.jpg"]
         },
         "description": "La arquitectura rural es la base de este diseño de página estático realizado con el objetivo de seguir dominando las herramientas que ofrece bootstrap.",
-        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "technology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
         "objectives": [
           "Dominar en su totalidad Botstrap 5",
           "Realizar un diseño minimalista"
@@ -378,7 +378,7 @@
           "url": ["Rgdl1.jpg", "Rgdl2.jpg", "Rgdl3.jpg", "Rgdl4.jpg"]
         },
         "description": "Diseño creado solo con Html y Css, manteniendo el mejor uso posible de la semántica y a su vez queriendo transmitir el lujo en el diseño general de la página web.",
-        "tecnology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
+        "technology": ["Html 5", "Css 3", "Bootstrap", "Font Awesome"],
         "objectives": [
           "Dominar en su totalidad Botstrap 5",
           "Conseguir la mejor Semántica posible que ofrece Html 5"

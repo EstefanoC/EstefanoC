@@ -1,12 +1,12 @@
 // Dependencies
 import { useTranslation } from "react-i18next";
 
+// Icons
+import EmailIcon from "@mui/icons-material/Email";
+
 // Styles
 import "./index.css";
 import { Container, Row } from "react-bootstrap";
-
-// Icons
-import EmailIcon from "@mui/icons-material/Email";
 
 const ContactIndex = () => {
   const [t, i18n] = useTranslation("global");

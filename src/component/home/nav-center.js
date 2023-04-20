@@ -1,12 +1,20 @@
-import React, { useState } from "react";
-import BgNavCenter from "./bg-navcenter";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+// Dependencies
 import { motion } from "framer-motion";
-import { HomeVariantCenter } from "../helpers/animation";
-import { Container, Button } from "react-bootstrap/";
+import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const NavLeft = (props) => {
+// Helpers
+import { HomeVariantCenter } from "../helpers/animation";
+
+// Components
+import BgNavCenter from "./bg-navcenter";
+
+// Styles
+import { Container, Button } from "react-bootstrap/";
+
+const NavLeft = ({ leaveTop }) => {
   const [stop, setStop] = useState(null);
   const [start, setStart] = useState(null);
   const [open, setOpen] = useState(false);
@@ -15,7 +23,7 @@ const NavLeft = (props) => {
 
   const handleOnClick = () => {
     setOpen(true);
-    props.leaveTop();
+    leaveTop();
 
     setTimeout(() => {
       navigate("/Portfolio");

@@ -9,23 +9,25 @@ const Knowledge = () => {
 
   return (
     <ul className="tabCer p-3">
-      {t("about.certificate.data", { returnObjects: true }).map((value) => (
-        <li key={value.id} className="liCer" title={value.name}>
-          <a
-            href={process.env.PUBLIC_URL + `/pdf${value.url}`}
-            target="_blank"
-            rel="noreferrer"
-            download={`${value.name} Estefano Chacon ${t(
-              "about.certificate.title"
-            )}`}
-          >
-            <CloudDownloadIcon
-              style={{ fontSize: "3rem", display: "block", margin: "0 auto" }}
-            />
-            <strong>{value.name}</strong>
-          </a>
-        </li>
-      ))}
+      {t("about.certificate.data", { returnObjects: true }).map(
+        ({ id, name, url }) => (
+          <li key={id} className="liCer" title={name}>
+            <a
+              href={process.env.PUBLIC_URL + `/pdf${url}`}
+              target="_blank"
+              rel="noreferrer"
+              download={`${name} Estefano Chacon ${t(
+                "about.certificate.title"
+              )}`}
+            >
+              <CloudDownloadIcon
+                style={{ fontSize: "3rem", display: "block", margin: "0 auto" }}
+              />
+              <strong>{name}</strong>
+            </a>
+          </li>
+        )
+      )}
     </ul>
   );
 };

@@ -1,15 +1,19 @@
-import React from "react";
-import TypedReact from "../helpers/typed";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import RefreshIcon from "@mui/icons-material/Refresh";
-import SearchIcon from "@mui/icons-material/Search";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import BgNavCenter from "../../media/bg-browser.jpg";
+// Dependencies
 import { useTranslation } from "react-i18next";
 
-const NavRight = (props) => {
+// Helpers
+import TypedReact from "../helpers/typed";
+
+// Icons / Images
+import SearchIcon from "@mui/icons-material/Search";
+import BgNavCenter from "../../media/bg-browser.jpg";
+import RefreshIcon from "@mui/icons-material/Refresh";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+const NavRight = ({ stop, start, WithoutStop }) => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -38,9 +42,9 @@ const NavRight = (props) => {
             backSpeed={40}
             backDelay={15000}
             cursor="|"
-            stop={props.stop}
-            start={props.start}
-            WithoutStop={props.WithoutStop}
+            stop={stop}
+            start={start}
+            WithoutStop={WithoutStop}
           />
           <div className="bg-browserAccount d-none d-md-inline-block">
             <AccountCircleIcon style={{ color: "#9aa0a6", fontSize: "3vw" }} />
