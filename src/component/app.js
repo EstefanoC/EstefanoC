@@ -23,8 +23,7 @@ const App = () => {
 
   return (
     <div className={`grid-main ${darkMode ? "dark" : ""}`}>
-      {(location.pathname !== "/EstefanoC" ||
-        location.pathname !== "/EstefanoC/") && (
+      {!location.pathname.includes("EstefanoC") && (
         <Navbar
           setDarkMode={() => setDarkMode(!darkMode)}
           darkMode={darkMode}
@@ -39,8 +38,7 @@ const App = () => {
           <Route path="*" element={<Error404 />} />
         </Routes>
       </AnimatePresence>
-      {(location.pathname !== "/EstefanoC" ||
-        location.pathname !== "/EstefanoC/") && <Footer />}
+      {!location.pathname.includes("EstefanoC") && <Footer />}
     </div>
   );
 };

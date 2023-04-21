@@ -98,7 +98,8 @@ const Footer = () => {
       </Container>
       <small className="text-center d-block w-100 pb-2">
         {t("footer.copyright")}&nbsp;
-        <CopyrightIcon style={{ color: "#6c757dad", fontSize: "1rem" }} /> 2021
+        <CopyrightIcon style={{ color: "#6c757dad", fontSize: "1rem" }} />{" "}
+        {`${new Date().getFullYear()} `}
         Estefano Chacón
       </small>
     </footer>
