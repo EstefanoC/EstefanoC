@@ -10,7 +10,7 @@
 <br>
 <br>
 
-# Mi Portafolio | Me Portfolio
+# Mi Portafolio | My Portfolio
 
 <br>
 
