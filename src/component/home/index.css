@@ -488,7 +488,6 @@
   position: absolute;
   top: 0;
   background: 0 86% / cover url(../../media/bg-navBottom.jpg);
-  filter: blur(0.5vh);
   height: 110%;
   width: 100%;
   user-select: none;

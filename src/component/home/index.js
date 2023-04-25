@@ -26,13 +26,13 @@ const Home = () => {
       <nav className="home-nav">
         <ul className="p-0 m-0">
           <Row fluid={"true"}>
-            <Col xs={12} className={animateFinishTop}>
+            <Col xs={12} className={`p-0 ${animateFinishTop}`}>
               <NavTop />
             </Col>
-            <Col xs={12} className={`center ${animateFinishCenter}`}>
+            <Col xs={12} className={`p-0 center ${animateFinishCenter}`}>
               <NavCenter leaveTop={animateTop} />
             </Col>
-            <Col xs={12}>
+            <Col xs={12} className="p-0">
               <NavBottom leaveTop={animateTop} leaveCenter={animateCenter} />
             </Col>
           </Row>

@@ -29,7 +29,7 @@
 }
 .textLogo {
   position: absolute;
-  top: 0;
+  top: -100px;
   right: 10vw;
   width: 30vw;
   height: 100vh;
