@@ -1,10 +1,14 @@
 // Dependencies
+import LazyLoad from "react-lazy-load";
 import { useTranslation } from "react-i18next";
 
 // Components
 import List from "./List";
 import Knowledge from "./Knowledge";
 import Experience from "./Experience";
+
+// Helpers
+import UseWidth from "../helpers/UseWidth";
 
 // Image / Icon
 import Portrait from "../../media/portrait.jpg";
@@ -25,9 +29,31 @@ const IndexAbout = () => {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
 
+  const { width } = UseWidth();
+
+  const getSize = (w = 1, h) => {
+    if (w >= 1200) {
+      return 220;
+    } else if (w >= 991) {
+      return 160;
+    } else if (w >= 768 && h) {
+      return 940;
+    } else if (w >= 768) {
+      return 720;
+    } else if (w >= 576 && h) {
+      return 705;
+    } else if (w >= 576) {
+      return 540;
+    } else if (h) {
+      return w * 1.3;
+    } else {
+      return w - 10;
+    }
+  };
+
   return (
     <section className="firstSection mb-5">
-      <Container>
+      <Container className="p-0">
         <Row>
           <Col md={8} sm={12} className="tab align-items-center">
             <Tabs defaultActiveKey="autobiography" id="tab" className="pt-3">
@@ -83,11 +109,13 @@ const IndexAbout = () => {
           </Col>
           <Col md={12} lg={2} className="portrait text-center text-lg-left p-0">
             <div>
-              <img
-                src={Portrait}
-                alt="Estefano Chacón Frontend Developer"
-                className="img-fluid"
-              />
+              <LazyLoad height={getSize(width, true)} width={getSize(width)}>
+                <img
+                  src={Portrait}
+                  alt="Estefano Chacón Frontend Developer"
+                  className="img-fluid"
+                />
+              </LazyLoad>
             </div>
           </Col>
         </Row>

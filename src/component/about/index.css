@@ -36,6 +36,9 @@
   .about .firstSection .portrait img {
     transform: translateY(0);
   }
+  .about .firstSection .portrait .LazyLoad {
+    margin: 0 auto;
+  }
 }
 .about .firstSection .tab {
   margin: 0 auto;
@@ -226,6 +229,26 @@
 .about .firstSection .tab .tabExp .experienceUl .liExp:hover p {
   font-size: 1.5rem;
   padding: 2rem 0.5rem;
+}
+@media (max-width: 1200px) {
+  .about .firstSection .tab .tabExp p,
+  .about .firstSection .tab .tabExp .experienceUl .liExp:hover p {
+    font-size: 1.1rem;
+  }
+  .about .firstSection .tab .tabExp p.small-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .about .firstSection .tab .tabExp p,
+  .about .firstSection .tab .tabExp .experienceUl .liExp:hover p,
+  .about .firstSection .tabCo h2,
+  .about .firstSection .tabCo h3 {
+    font-size: 1rem;
+  }
+  .about .firstSection .tab .tabExp p.small-text {
+    font-size: 0.8rem;
+  }
 }
 /* Dark Mode */
 .dark .about .firstSection .portrait img {

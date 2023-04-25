@@ -9,6 +9,9 @@ nav.navbar {
   border-bottom: 1px solid var(--comple2);
   grid-area: header;
 }
+nav.navbar .navbarBrand {
+  min-width: 120px;
+}
 nav.navbar .img-logo {
   cursor: pointer;
   margin: 0 1vw;
@@ -151,6 +154,16 @@ nav.navbar .country-select .deactivate:hover .title-code.en {
 @media (min-width: 959px) {
   nav.navbar {
     overflow: hidden;
+  }
+}
+@media (max-width: 960px) {
+  nav.navbar .navbarBrand {
+    margin-left: 1rem;
+    min-width: 80px;
+  }
+  nav.navbar .img-logo {
+    margin: 0;
+    width: auto;
   }
 }
 @media screen and (max-width: 960px) {

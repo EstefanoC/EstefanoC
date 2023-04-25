@@ -49,8 +49,8 @@
 }
 .portfolio .firstSection .portfolioCard .cardImg .col-6 button {
   outline: none;
-  background-color: #ffd39050;
-  border: 1px solid var(--pri);
+  background-color: var(--pri);
+  border: 1px solid var(--comple1);
   color: var(--comple1);
   font-size: 1.3rem;
   padding: 2rem;
@@ -59,20 +59,20 @@
   transition: ease all 0.5s;
 }
 .portfolio .firstSection .portfolioCard .cardImg .col-6 button:hover {
-  background-color: var(--pri);
-  border-color: var(--comple1);
   color: var(--sec);
+  border-color: var(--sec);
+  filter: brightness(0.9);
 }
 .portfolio .firstSection .portfolioCard .cardImg .col-6 button:disabled {
   border: none;
-  background-color: var(--pri);
+  background-color: #ffd39050;
   background: radial-gradient(
     closest-side at 50% 50%,
     var(--comple1) -180%,
-    #d7ab68 110%
+    #ffd39050 110%
   );
   color: rgb(95, 95, 95);
-  cursor: inherit;
+  cursor: not-allowed;
 }
 .portfolio .firstSection .portfolioCard .cardImg .back {
   border-bottom-right-radius: 0;
@@ -250,6 +250,7 @@
 .portfolio .firstSection .portfolioCard .cardText .tab-content .tabDes button {
   position: absolute;
   bottom: 0;
+  left: 0;
   transition: ease all 0.5s;
   color: var(--comple1);
   background-color: #ffdfaf;
@@ -292,11 +293,8 @@
   font-size: 1.3rem;
 }
 .portfolio .firstSection .portfolioCard .cardText .tab-content .tabTec .list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1.3rem 1rem;
   list-style: none;
-  align-items: center;
 }
 .portfolio .firstSection .portfolioCard .cardText .tabTec .list a {
   text-decoration: none;
@@ -386,6 +384,16 @@
 @media (max-width: 1200px) {
   .portfolio .firstSection .portfolioCard .cardText .tab-content .tabObj {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio .firstSection .portfolioCard .cardText .tab-content .tabTec h3,
+  .dark .portfolio .firstSection .portfolioCard .cardImg .col-6 button {
+    font-size: 1rem;
+  }
+  .portfolio .firstSection .portfolioCard .cardImg .col-6 button {
+    padding: 1rem;
   }
 }
 

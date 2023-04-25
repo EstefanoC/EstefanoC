@@ -1,3 +1,9 @@
+html,
+body {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   /* background-color: var(--comple2);
@@ -56,4 +62,60 @@ body {
 .dark {
   background: #232323;
   color: var(--comple2);
+}
+
+/* Animation of lazy load image */
+.LazyLoad {
+  position: relative;
+  background: var(--pri);
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.LazyLoad.autoSize {
+  width: unset;
+  height: unset;
+}
+.LazyLoad:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border-top: 6px solid var(--sec);
+  border-right: 6px solid transparent;
+  animation: spinner 0.6s linear infinite;
+  transition: all 1s ease-in-out;
+}
+.LazyLoad.small:before {
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid var(--sec);
+  border-right: 3px solid transparent;
+}
+.is-visible {
+  background: transparent;
+  overflow: visible;
+}
+.is-visible:before {
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .row {
+    margin-left: unset !important;
+    margin-right: unset !important;
+  }
 }

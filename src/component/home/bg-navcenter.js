@@ -1,4 +1,5 @@
 // Dependencies
+import LazyLoad from "react-lazy-load";
 import { useTranslation } from "react-i18next";
 
 // Helpers
@@ -18,7 +19,13 @@ const NavRight = ({ stop, start, WithoutStop }) => {
 
   return (
     <div className="bg-navCenter">
-      <img src={BgNavCenter} alt="background portafolio" className="bg-fluid" />
+      <LazyLoad className="autoSize">
+        <img
+          src={BgNavCenter}
+          alt="FrontEnd Developer Senior EstefanoC Estefano Chacon"
+          className="bg-fluid"
+        />
+      </LazyLoad>
       <div className="bg-browser d-flex justify-content-start align-items-start">
         <ArrowBackIcon
           style={{ color: "#babcbe", fontSize: "3vw" }}

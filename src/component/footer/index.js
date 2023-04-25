@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 // Dependencies
+import LazyLoad from "react-lazy-load";
 import { useTranslation } from "react-i18next";
 import { useLocation, Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
@@ -41,7 +42,13 @@ const Footer = () => {
           <Col xs={12} md={3}>
             <div className="footerBrand text-center">
               <Link to="/EstefanoC">
-                <img src={Logo} alt="Logo" className="img-logo" />
+                <LazyLoad height={160} width={160} className="small">
+                  <img
+                    alt="FrontEnd Developer Senior EstefanoC Estefano Chacon"
+                    src={Logo}
+                    className="img-logo"
+                  />
+                </LazyLoad>
               </Link>
             </div>
           </Col>

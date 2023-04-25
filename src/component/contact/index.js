@@ -13,7 +13,7 @@ const ContactIndex = () => {
 
   return (
     <Container>
-      <Row>
+      <Row className="pt-md-5 pb-5">
         <h1 className="text-center">
           {t("contact.h1")}
           <a href={t("contact.email-href")}>

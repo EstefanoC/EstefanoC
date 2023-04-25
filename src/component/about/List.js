@@ -1,11 +1,29 @@
 // Dependencies
+import LazyLoad from "react-lazy-load";
 import { useTranslation } from "react-i18next";
+
+// Helpers
+import UseWidth from "../helpers/UseWidth";
 
 // Data
 import { Icon1, Icon2, Icon3 } from "../../data/technologyItems";
 
 const List = () => {
   const [t, i18n] = useTranslation("global");
+
+  const { width } = UseWidth();
+
+  const getSize = (w = 1) => {
+    if (w >= 1400) {
+      return 75;
+    } else if (w >= 768) {
+      return 70;
+    } else if (w >= 340) {
+      return 70;
+    } else {
+      return 100;
+    }
+  };
 
   return (
     <div className="tabCo p-3">
@@ -14,11 +32,17 @@ const List = () => {
         {Icon1.map(({ title, url, img }, index) => (
           <li className={`logo ${title}`} key={index}>
             <a href={url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={require(`../../media/${img.toString()}`)}
-                alt={title}
-                className="img-fluid"
-              />
+              <LazyLoad
+                height={getSize(width)}
+                width={getSize(width)}
+                className="small"
+              >
+                <img
+                  src={require(`../../media/${img.toString()}`)}
+                  alt={title}
+                  className="img-fluid"
+                />
+              </LazyLoad>
               <strong className="d-block text-center">{title}</strong>
             </a>
           </li>
@@ -30,11 +54,13 @@ const List = () => {
         {Icon2.map(({ title, url, img }, index) => (
           <li className="logo" key={index}>
             <a href={url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={require(`../../media/${img.toString()}`)}
-                alt={title}
-                className="img-fluid"
-              />
+              <LazyLoad height={70} width={70}>
+                <img
+                  src={require(`../../media/${img.toString()}`)}
+                  alt={title}
+                  className="img-fluid"
+                />
+              </LazyLoad>
               <strong className="d-block text-center">{title}</strong>
             </a>
           </li>
@@ -46,11 +72,13 @@ const List = () => {
         {Icon3.map(({ title, url, img }, index) => (
           <li className="logo" key={index}>
             <a href={url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={require(`../../media/${img.toString()}`)}
-                alt={title}
-                className="img-fluid"
-              />
+              <LazyLoad height={70} width={70}>
+                <img
+                  src={require(`../../media/${img.toString()}`)}
+                  alt={title}
+                  className="img-fluid"
+                />
+              </LazyLoad>
               <strong className="d-block text-center">{title}</strong>
             </a>
           </li>

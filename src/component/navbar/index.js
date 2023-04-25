@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 // Dependencies
+import LazyLoad from "react-lazy-load";
 import { useTranslation } from "react-i18next";
 import { useLocation, Link } from "react-router-dom";
 
@@ -37,7 +38,13 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
     <nav className="navbar">
       <div className="navbarBrand">
         <Link to="/EstefanoC">
-          <img src={Logo} alt="Logo" className="img-logo" />
+          <LazyLoad height={80} width={80} className="small">
+            <img
+              src={Logo}
+              alt="FrontEnd Developer Senior EstefanoC Estefano Chacon"
+              className="img-logo"
+            />
+          </LazyLoad>
         </Link>
       </div>
       <ul className={click ? "nav-menu active p-0" : "nav-menu p-0"}>
@@ -83,12 +90,13 @@ const NavbarTop = ({ setDarkMode, darkMode }) => {
                   document.documentElement.lang = code;
                 }}
               >
-                <img
-                  src={require(`../../media/lang_${code.toString()}.png`)}
-                  alt={code}
-                  width="31"
-                  height="21"
-                />
+                <LazyLoad height={21} width={32} className="small">
+                  <img
+                    src={require(`../../media/lang_${code.toString()}.png`)}
+                    alt={code}
+                  />
+                </LazyLoad>
+
                 <span className={`title-code ${code}`}>{title}</span>
               </li>
             )

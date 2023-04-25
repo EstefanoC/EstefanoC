@@ -60,7 +60,7 @@ const IndexPortfolio = () => {
     <section className="firstSection mb-5">
       <Container>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} className="text-center p-0">
             {t("portfolio.data", { returnObjects: true }).map(
               (
                 { title, url, img, description, technology, objectives },
