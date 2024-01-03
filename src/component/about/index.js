@@ -22,10 +22,11 @@ import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 const IndexAbout = () => {
   const [t, i18n] = useTranslation("global");
 
-  function getAge() {
-    var birthday = new Date(1999, 10, 22);
+  function getAge(y, m, d) {
+    var birthday = new Date(y, m, d);
     var ageDifMs = Date.now() - birthday.getTime();
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
+
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
 
@@ -33,9 +34,9 @@ const IndexAbout = () => {
 
   const getSize = (w = 1, h) => {
     if (w >= 1200) {
-      return 220;
+      return 260;
     } else if (w >= 991) {
-      return 160;
+      return 210;
     } else if (w >= 768 && h) {
       return 940;
     } else if (w >= 768) {
@@ -67,7 +68,8 @@ const IndexAbout = () => {
                     <strong>{t("about.autobiography.strong")}</strong>&nbsp;
                     {t("about.autobiography.p", {
                       returnObjects: true,
-                      age: getAge(),
+                      age: getAge(1999, 10, 22),
+                      experience: getAge(2019, 1, 1),
                     })}
                   </p>
                   <a

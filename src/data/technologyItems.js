@@ -45,6 +45,11 @@ export const Icon1 = [
     img: "expressjs.png",
   },
   {
+    title: "Python",
+    url: "https://www.python.org/",
+    img: "python.svg",
+  },
+  {
     title: "Mongodb",
     url: "https://www.mongodb.com/",
     img: "mongodb.png",

@@ -66,8 +66,8 @@
     "autobiography": {
       "title": "Autobiografía",
       "name": "Mi nombre es Estefano Chacón, soy",
-      "strong": "Web Developer Front-end Mid",
-      "p": "y tengo {{age}} años, desde hace ya años me enamoré de la programación y en especial del desarrollo web aunque ultimamente he aprendido lo necesario para desarrolar app para teléfonos.  Por la simple razón que me considero una persona que le gusta la lógica y resolver problemas me encantaria dedicarle toda mi vida a esta profesión, siempre actualizandome conforme la tecnología y sus tendencias.",
+      "strong": "Web Developer Front-End Mid",
+      "p": "y tengo {{age}} años, a su vez, poseo {{experience}} años enamorado de la programación y en especial del desarrollo web, he aprendido lo necesario para una buena gestión en proyectos de software, app y templates con el uso correcto de metodologias.  Me considero una persona apasionada a la lógica y resolver problemas, siempre actualizandome conforme la tecnología y sus tendencias.",
       "cv-pdf": "cv_es.pdf"
     },
     "knowledge": {

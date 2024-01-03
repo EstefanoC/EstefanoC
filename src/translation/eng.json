@@ -66,8 +66,8 @@
     "autobiography": {
       "title": "Autobiography",
       "name": "My name is Estefano Chacón, I am",
-      "strong": "Web Developer Front-end Mid",
-      "p": "and I am {{age}} years old, for years now I fell in love with programming and especially web development, although lately I have learned what is necessary to develop apps for phones. For the simple reason that I consider myself a person who likes logic and solving problems, I would love to dedicate my whole life to this profession, always updating myself according to technology and its trends.",
+      "strong": "Web Developer Front-End Mid",
+      "p": "and I am {{age}} years old, I have {{experience}} years in love with programming and especially web development, I have learned what is necessary for good management in software projects, apps and templates with the use correct methodologies. I consider myself a person passionate about logic and solving problems, always updating according to technology and its trends.",
       "cv-pdf": "cv_en.pdf"
     },
     "knowledge": {
