@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 // Components
 import List from "./List";
 import Knowledge from "./Knowledge";
-import Experience from "./Experience";
 
 // Helpers
 import UseWidth from "../helpers/UseWidth";
@@ -99,14 +98,11 @@ const IndexAbout = () => {
               <Tab eventKey="Certificate" title={t("about.certificate.titles")}>
                 <Knowledge />
               </Tab>
-              <Tab eventKey="Experience" title={t("about.experience.title")}>
-                <Experience />
-              </Tab>
             </Tabs>
           </Col>
           <Col md={12} lg={{ span: 2 }} className="p-0">
             <h1 className="text-sm-left mb-4 mb-lg-0 shadown-text">
-              <span>Mid</span> <span>Web</span> <span>Developer</span>
+              <span>Senior</span> <span>Full-Stack</span> <span>Developer</span>
             </h1>
           </Col>
           <Col md={12} lg={2} className="portrait text-center text-lg-left p-0">

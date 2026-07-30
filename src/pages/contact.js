@@ -18,44 +18,50 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Estefano Chacon | EstefanoC</title>
+        <title>EstefanoC - Desarrollador Full-Stack Senior</title>
         <link rel="canonical" href="https://estefanoc.github.io/EstefanoC" />
-        <meta property="og:title" content="EstefanoC FrontEnd Developer" />
-        <meta name="twitter:title" content="EstefanoC FrontEnd Developer" />
+        <meta
+          property="og:title"
+          content="EstefanoC - Desarrollador Full-Stack Senior"
+        />
+        <meta
+          name="twitter:title"
+          content="EstefanoC - Desarrollador Full-Stack Senior"
+        />
         <meta
           name="description"
-          content="FrontEnd Web developer EstefanoC Estefano Chacon"
+          content="EstefanoC - proyectos de desarrollo de software, aplicaciones web, móviles o consultoría en IA. Disponible para colaboraciones y nuevos desafíos."
         />
         <meta
           property="og:site_name"
-          content="Web Development FrontEnd EstefanoC"
+          content="EstefanoC | Portafolio de Desarrollador Full-Stack"
         />
         <meta
           property="og:description"
-          content="Web Development FrontEnd and App Development | Desarrollador Web Front end | EstefanoC Estefano Chacon"
+          content="EstefanoC - proyectos de desarrollo de software, aplicaciones web, móviles o consultoría en IA. Disponible para colaboraciones y nuevos desafíos."
         />
         <meta
           name="twitter:description"
-          content="Web Development FrontEnd and App Development | Desarrollador Web Front end | EstefanoC Estefano Chacon"
+          content="EstefanoC - proyectos de desarrollo de software, aplicaciones web, móviles o consultoría en IA. Disponible para colaboraciones y nuevos desafíos."
         />
         <meta
           property="og:url"
-          content="technologyhttps://estefanoc.github.io/EstefanoC"
+          content="https://estefanoc.github.io/EstefanoC/contact"
         />
         <meta
           name="twitter:url"
-          content="technologyhttps://estefanoc.github.io/EstefanoC"
+          content="https://estefanoc.github.io/EstefanoC/contact"
         />
         <meta
           property="og:image"
-          itemprop="image"
-          content="technologyhttps://estefanoc.github.io/logo512.png"
+          itemProp="image"
+          content="https://estefanoc.github.io/logo512.png"
         />
         <meta property="og:type" content="website" />
         <link
           rel="apple-touch-icon"
           sizes="60x60"
-          href="technologyhttps://estefanoc.github.io/logo60.png"
+          href="https://estefanoc.github.io/logo60.png"
         />
         <meta name="robots" content="index,nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

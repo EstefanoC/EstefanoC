@@ -4,14 +4,14 @@
     "bg-about": {
       "hello": "Hello World!",
       "typed": [
-        "Thanks for visit me :)",
-        "Learn every day more about web development is my passion",
-        "Meet me here",
-        "I want to continue growing professionally",
-        "I like the challenges!",
-        "I don't drink coffee to stay awake, i have too energy",
-        "I am responsible",
-        "I am focused"
+        "Senior Full-Stack Software Developer.",
+        "Expert in JavaScript, React, and Node.js.",
+        "Passionate about technology and AI.",
+        "Creating custom software solutions.",
+        "Forward-thinking Software Engineer.",
+        "Get to know me better here.",
+        "Ready for new professional challenges.",
+        "Committed to excellence and innovation."
       ]
     },
     "button-portfolio": "Portfolio",
@@ -20,9 +20,9 @@
       "typed": [
         "https://es.reactjs.org/",
         "https://github.com/",
-        "https://firebase.google.com/",
-        "https://estefanoc.github.io/UrbanStyle/",
-        "https://developers.google.com/speed/pagespeed/",
+        "Web and mobile application development.",
+        "Artificial Intelligence integration.",
+        "Scalable solutions in the Cloud.",
         "Enter my portfolio and see what I am capable of",
         "I will do my best to make your website look its best"
       ]
@@ -65,9 +65,9 @@
     "title": "About me",
     "autobiography": {
       "title": "Autobiography",
-      "name": "My name is Estefano Chacón, I am",
-      "strong": "Web Developer Front-End Mid",
-      "p": "and I am {{age}} years old, I have {{experience}} years in love with programming and especially web development, I have learned what is necessary for good management in software projects, apps and templates with the use correct methodologies. I consider myself a person passionate about logic and solving problems, always updating according to technology and its trends.",
+      "name": "My name is Estefano Chacón, I am a",
+      "strong": "Senior Full-Stack Software Developer",
+      "p": "aged {{age}} with {{experience}} years of experience in the world of programming. I specialize in creating robust and scalable software solutions, from web and mobile applications to the integration of Artificial Intelligence. My focus is on code quality, system architecture, and delivering products that exceed expectations. I am passionate about solving complex problems and staying at the forefront of the latest technological trends to drive innovation.",
       "cv-pdf": "cv_en.pdf"
     },
     "knowledge": {
@@ -152,34 +152,6 @@
         }
       ]
     },
-    "experience": {
-      "title": "Experience",
-      "p1": "I will show some pages in which I have worked as proof of my experience:",
-      "p2": "I am not responsible for any major change in these pages or change of hosting, so I will leave a representative image.",
-      "data": [
-        {
-          "id": 1,
-          "title": "Packachange",
-          "description": "In this project I am currently in charge of the FrontEnd",
-          "image": "Pck.jpg",
-          "url": "https://packachange.com/"
-        },
-        {
-          "id": 2,
-          "title": "Celta",
-          "description": "In this project made in Wordpress I have worked on the logic of its payment form and many other functions, in addition to improving and fixing style errors.",
-          "image": "Cl.jpg",
-          "url": "https://celta.cl/"
-        },
-        {
-          "id": 3,
-          "title": "Veronica Propiedades",
-          "description": "This project made in Wordpress I have worked on the logic of the conversion of live prices from Chilean pesos to dollars and other necessary style changes",
-          "image": "Vp.jpg",
-          "url": "https://veronicapropiedades.com/"
-        }
-      ]
-    },
     "button-download": "Download Cv"
   },
   "portfolio": {
@@ -194,6 +166,54 @@
     "carrousel-next": "Next",
     "carrousel-back": "Back",
     "data": [
+      {
+        "title": "Planurbis",
+        "img": {
+          "quantity": 4,
+          "url": ["Pla1.png", "Pla2.png", "Pla3.png", "Pla4.png"]
+        },
+        "description": "It's a modern and dynamic web ecosystem built with Next.js and Strapi. Its architecture is based on a scalable block system: Next.js renders the exact content configured in the CMS. The platform includes multi-language support, dynamic page creation, and deep metadata integration. The result is a fast website that's easy for the client to manage and fully compatible with SEO.",
+        "technology": [
+          "Html 5",
+          "Css 3",
+          "Tailwindcss",
+          "Javascript",
+          "Typescript",
+          "nodejs",
+          "Strapi",
+          "React"
+        ],
+        "objectives": [
+          "Create a scalable web architecture based on dynamic blocks",
+          "Develop a 100% self-managed multi-language system",
+          "Integrate Next.js and Strapi for efficient server-side rendering"
+        ]
+      },
+      {
+        "title": "Millard App",
+        "url": {
+          "git": "https://github.com/EstefanoC/millard-app"
+        },
+        "img": {
+          "quantity": 5,
+          "mobile": 5,
+          "url": ["Mil1.jpg", "Mil2.jpg", "Mil3.jpg", "Mil4.jpg", "Mil5.jpg"]
+        },
+        "description": "Development of 'Millard APP', a mobile solution created with Expo designed for the sale and management of car parts. The project integrates a complete e-commerce with a profile system, where each user's information is specifically recorded to facilitate the work of automotive mechanics. The result is an intuitive and fast application that speeds up both the purchase of parts and the diagnosis in the workshop.",
+        "technology": [
+          "Html 5",
+          "Css 3",
+          "Sass",
+          "Javascript",
+          "Typescript",
+          "React"
+        ],
+        "objectives": [
+          "Develop an intuitive e-commerce platform for searching and purchasing automotive spare parts",
+          "Ensure optimal performance and a smooth experience on both Android and iOS using Expo",
+          "Improve the flow of information and the connection between customers, spare parts and automotive workshops"
+        ]
+      },
       {
         "title": "Rapidito Yaa!",
         "img": {
@@ -299,6 +319,24 @@
         ]
       },
       {
+        "title": "Strapi IA",
+        "url": {
+          "git": "https://github.com/EstefanoC/strapi-ia"
+        },
+        "img": {
+          "quantity": 2,
+          "url": ["Sia1.png", "Sia2.png"]
+        },
+        "description": "This project was born from the need to automate content management. I developed a plugin for Strapi integrated directly with Gemini's Artificial Intelligence. By just entering a simple prompt, the tool is capable of generating complex structures (Content Types) and filling them with content automatically. This custom software development showcases my ability to create AI agents that optimize workflows, resulting in a highly efficient plugin that dramatically speeds up content creation and management in the CMS.",
+        "technology": ["Javascript", "Typescript", "Strapi", "React", "nodejs"],
+        "objectives": [
+          "Integrate the Gemini API natively within the Strapi administration panel",
+          "Automate the creation of complex content",
+          "Generate and populate structured content in the database intelligently",
+          "Drastically reduce the time required to configure and structure the backend"
+        ]
+      },
+      {
         "title": "Game Room",
         "url": {
           "git": "https://github.com/EstefanoC/GameRoom",
@@ -386,7 +424,7 @@
   "contact": {
     "title": "Contact me",
     "h1": "send me an email",
-    "p1": "I usually answer in less than 24 hours if it is business days, do not hesitate to leave me information to contact you or your concern in which I can help you",
+    "p1": "I offer software development, website creation, and app development. Contact me for a quote on your idea or to join your team. Leave your contact information and I'll get back to you within 24 business hours.",
     "email-href": "mailto:estefano.jesus6@gmail.com?Subject=I%20would%20like%20contact%20you",
     "email-title": "Press here or on the icon"
   },

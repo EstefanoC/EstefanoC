@@ -4,14 +4,14 @@
     "bg-about": {
       "hello": "Hola mundo!",
       "typed": [
-        "gracias por visitarme :)",
-        "Aprender cada día más acerca de programación es mi pasión",
-        "Conóceme aqui",
-        "Me sobran ganas de seguir creciendo profesionalmente",
-        "¡Me gustan los retos!",
-        "No necesito café para mantenerme despierto, ya tengo mucha energía",
-        "Me considero responsable",
-        "Me considero enfocado"
+        "Desarrollador de Software Full-Stack.",
+        "Experto en JavaScript, React y Node.js.",
+        "Apasionado por la tecnología y la IA.",
+        "Creando soluciones de software a medida.",
+        "Ingeniero de Software con visión de futuro.",
+        "Conóceme más aquí.",
+        "Listo para nuevos desafíos profesionales.",
+        "Comprometido con la excelencia y la innovación."
       ]
     },
     "button-portfolio": "Portafolio",
@@ -20,9 +20,9 @@
       "typed": [
         "https://es.reactjs.org/",
         "https://github.com/",
-        "https://firebase.google.com/",
-        "https://estefanoc.github.io/UrbanStyle/",
-        "https://developers.google.com/speed/pagespeed/",
+        "Desarrollo de aplicaciones web y móviles.",
+        "Integración de Inteligencia Artificial.",
+        "Soluciones escalables en la nube (Cloud).",
         "Ingresa a mi portafolio y mira de lo que soy capaz",
         "Haré lo imposible para que tú sitio web se vea lo mejor posible"
       ]
@@ -65,9 +65,9 @@
     "title": "Sobre mi",
     "autobiography": {
       "title": "Autobiografía",
-      "name": "Mi nombre es Estefano Chacón, soy",
-      "strong": "Web Developer Front-End Mid",
-      "p": "y tengo {{age}} años, a su vez, poseo {{experience}} años enamorado de la programación y en especial del desarrollo web, he aprendido lo necesario para una buena gestión en proyectos de software, app y templates con el uso correcto de metodologias.  Me considero una persona apasionada a la lógica y resolver problemas, siempre actualizandome conforme la tecnología y sus tendencias.",
+      "name": "Mi nombre es Estefano Chacón, soy un",
+      "strong": "Desarrollador de Software Full-Stack Senior",
+      "p": "con {{age}} años y {{experience}} de experiencia en el mundo de la programación. Me especializo en la creación de soluciones de software robustas y escalables, desde aplicaciones web y móviles hasta la integración de Inteligencia Artificial. Mi enfoque se centra en la calidad del código, la arquitectura de sistemas y la entrega de productos que superen las expectativas. Me apasiona resolver problemas complejos y mantenerme a la vanguardia de las últimas tendencias tecnológicas para impulsar la innovación.",
       "cv-pdf": "cv_es.pdf"
     },
     "knowledge": {
@@ -152,34 +152,6 @@
         }
       ]
     },
-    "experience": {
-      "title": "Experiencia",
-      "p1": "Mostrare algunas páginas en las que he trabajado como prueba de mi experiencia:",
-      "p2": "No me hago responsable de algún cambio importante en dichas páginas o cambio de hosting, por ello dejaré una imagen reprensentativa.",
-      "data": [
-        {
-          "id": 1,
-          "title": "Packachange",
-          "description": "En este proyecto actualmente estoy encargado del FrontEnd",
-          "image": "Pck.jpg",
-          "url": "https://packachange.com/"
-        },
-        {
-          "id": 2,
-          "title": "Celta",
-          "description": "En este proyecto hecho en Wordpress he trabajado en la lógica de su formulario de pago y otras tantas funciones, además de mejorar y arreglar errores de estilo",
-          "image": "Cl.jpg",
-          "url": "https://celta.cl/"
-        },
-        {
-          "id": 3,
-          "title": "Veronica Propiedades",
-          "description": "Este proyecto hecho en Wordpress he trabajado en la lógica de la conversión de precios en vivo de pesos chilenos a dólares y otros cambios necesarios de estilo",
-          "image": "Vp.jpg",
-          "url": "https://veronicapropiedades.com/"
-        }
-      ]
-    },
     "button-download": "Descargar Cv"
   },
   "portfolio": {
@@ -194,6 +166,54 @@
     "carrousel-next": "Siguiente",
     "carrousel-back": "Atras",
     "data": [
+      {
+        "title": "Planurbis",
+        "img": {
+          "quantity": 4,
+          "url": ["Pla1.png", "Pla2.png", "Pla3.png", "Pla4.png"]
+        },
+        "description": "Es Un ecosistema web moderno y dinámico construido con Next.js y Strapi. Su arquitectura se basa en un sistema de bloques escalables: Next.js renderiza el contenido exacto que se configura desde el CMS. La plataforma incluye soporte multi-idioma, creación de páginas dinámicas y una integración profunda de metadatos. El resultado es un sitio web rápido, fácil de gestionar por el cliente y con total compatibilidad para el posicionamiento SEO.",
+        "technology": [
+          "Html 5",
+          "Css 3",
+          "Tailwindcss",
+          "Javascript",
+          "Typescript",
+          "nodejs",
+          "Strapi",
+          "React"
+        ],
+        "objectives": [
+          "Crear una arquitectura web escalable basada en bloques dinámicos",
+          "Desarrollar un sistema multi-idioma 100% autogestionable",
+          "Integrar Next.js y Strapi para un renderizado eficiente desde el servidor"
+        ]
+      },
+      {
+        "title": "Millard App",
+        "url": {
+          "git": "https://github.com/EstefanoC/millard-app"
+        },
+        "img": {
+          "quantity": 5,
+          "mobile": 5,
+          "url": ["Mil1.jpg", "Mil2.jpg", "Mil3.jpg", "Mil4.jpg", "Mil5.jpg"]
+        },
+        "description": "Desarrollo de 'Millard APP', una solución móvil creada con Expo diseñada para la venta y gestión de repuestos de autos. El proyecto integra un e-commerce completo con un sistema de perfiles, donde la información de cada usuario queda registrada específicamente para facilitar el trabajo de los mecánicos automotrices. El resultado es una aplicación intuitiva y rápida que agiliza tanto la compra de piezas como el diagnóstico en el taller.",
+        "technology": [
+          "Html 5",
+          "Css 3",
+          "Sass",
+          "Javascript",
+          "Typescript",
+          "React"
+        ],
+        "objectives": [
+          "Desarrollar un e-commerce intuitivo para la búsqueda y compra de repuestos automotrices",
+          "Garantizar un rendimiento óptimo y una experiencia fluida tanto en Android como en iOS usando Expo",
+          "Mejorar el flujo de información y la conexión entre clientes, repuestos y talleres automotrices"
+        ]
+      },
       {
         "title": "Rapidito Yaa!",
         "img": {
@@ -299,6 +319,24 @@
         ]
       },
       {
+        "title": "Strapi IA",
+        "url": {
+          "git": "https://github.com/EstefanoC/strapi-ia"
+        },
+        "img": {
+          "quantity": 2,
+          "url": ["Sia1.png", "Sia2.png"]
+        },
+        "description": "Este proyecto nació de la necesidad de automatizar la gestión de contenido. Desarrollé un plugin para Strapi integrado directamente con la Inteligencia Artificial de Gemini. Con tan solo ingresar un simple prompt, la herramienta es capaz de generar estructuras complejas (Content Types) y rellenarlas con contenido de forma automática. Este desarrollo de software a medida demuestra mi capacidad para crear agentes de IA que optimizan flujos de trabajo, resultando en un plugin muy eficiente que acelera drásticamente la creación y gestión de contenido en el CMS.",
+        "technology": ["Javascript", "Typescript", "Strapi", "React", "nodejs"],
+        "objectives": [
+          "Integrar la API de Gemini de forma nativa dentro del panel de administración de Strapi",
+          "Automatizar la creación de cotnenido complejo",
+          "Generar y poblar contenido estructurado en la base de datos de forma inteligente",
+          "Reducir drásticamente el tiempo de configuración y estructuración del backend"
+        ]
+      },
+      {
         "title": "Game Room",
         "url": {
           "git": "https://github.com/EstefanoC/GameRoom",
@@ -389,7 +427,7 @@
   "contact": {
     "title": "Contactáme",
     "h1": "Enviame un correo",
-    "p1": "Usualmente contesto en menos de 24 horas si se trata de días hábiles, no dudes en dejarme información para contactarte o tu inquietud en la que pueda ayudarte",
+    "p1": "Ofrezco desarrollo de software, creación de webs y apps. Escríbeme para cotizar tu idea o sumar fuerzas en tu equipo. Déjame tus datos de contacto y te responderé en menos de 24 horas hábiles",
     "email-href": "mailto:estefano.jesus6@gmail.com?Subject=Quisiera%20contactarme%20contigo",
     "email-title": "Presionando aqui o en el icono"
   },

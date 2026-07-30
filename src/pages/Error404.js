@@ -25,7 +25,7 @@ const Error404 = () => {
           <LazyLoad height={450} width={426}>
             <img
               src={ErrorImg}
-              alt="FrontEnd Developer Senior EstefanoC Estefano Chacon"
+              alt="Error 404 - Página no encontrada - Portafolio de EstefanoC, Desarrollador de Software"
               className="img-fluid"
             />
           </LazyLoad>

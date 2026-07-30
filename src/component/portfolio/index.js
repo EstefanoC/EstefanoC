@@ -19,6 +19,14 @@ const IndexPortfolio = () => {
   const [t, i18n] = useTranslation("global");
   const [linkStatus, setLinkStatus] = useState([
     {
+      name: "Planurbis",
+      link: "link1",
+    },
+    {
+      name: "Millard App",
+      link: "link1",
+    },
+    {
       name: "Rapidito Yaa!",
       link: "link1",
     },
@@ -28,6 +36,10 @@ const IndexPortfolio = () => {
     },
     {
       name: "Urban Style",
+      link: "link1",
+    },
+    {
+      name: "Strapi IA",
       link: "link1",
     },
     {
@@ -51,8 +63,8 @@ const IndexPortfolio = () => {
   const handleClickLink = (links, title) => {
     setLinkStatus(
       linkStatus.map((item) =>
-        item.name === title ? { ...item, link: links } : item
-      )
+        item.name === title ? { ...item, link: links } : item,
+      ),
     );
   };
 
@@ -64,7 +76,7 @@ const IndexPortfolio = () => {
             {t("portfolio.data", { returnObjects: true }).map(
               (
                 { title, url, img, description, technology, objectives },
-                index
+                index,
               ) => (
                 <article className="portfolioCard p-2 mb-5" key={index}>
                   <header className="cardHeader text-center py-2">
@@ -173,7 +185,7 @@ const IndexPortfolio = () => {
                     </Tab.Container>
                   </div>
                 </article>
-              )
+              ),
             )}
           </Col>
         </Row>

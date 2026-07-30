@@ -30,6 +30,11 @@ export const Icon1 = [
     img: "git.svg",
   },
   {
+    title: "Wordpress",
+    url: "https://wordpress.com",
+    img: "wordpress.png",
+  },
+  {
     title: "Firebase",
     url: "https://firebase.google.com/",
     img: "firebase.webp",
@@ -38,6 +43,16 @@ export const Icon1 = [
     title: "nodejs",
     url: "https://nodejs.org/en/",
     img: "nodejs.png",
+  },
+  {
+    title: "Strapi",
+    url: "https://strapi.io/",
+    img: "strapi.webp",
+  },
+  {
+    title: "Supabase",
+    url: "https://supabase.com/",
+    img: "supabase.png",
   },
   {
     title: "Expressjs",
@@ -67,6 +82,11 @@ export const Icon1 = [
 ];
 
 export const Icon2 = [
+  {
+    title: "Tailwind",
+    url: "https://tailwindcss.com/",
+    img: "tailwindcss.svg",
+  },
   {
     title: "Bootstrap",
     url: "https://getbootstrap.com/",
@@ -111,9 +131,14 @@ export const Icon3 = [
     img: "php.svg",
   },
   {
-    title: "Wordpress",
-    url: "https://wordpress.com",
-    img: "wordpress.png",
+    title: "Docker",
+    url: "https://www.docker.com/",
+    img: "docker.svg",
+  },
+  {
+    title: "Laravel",
+    url: "https://laravel.com/",
+    img: "laravel.svg",
   },
   {
     title: "WampServer",
